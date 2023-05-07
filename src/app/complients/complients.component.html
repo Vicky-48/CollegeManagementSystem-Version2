@@ -1,0 +1,98 @@
+<app-StudentpageManu></app-StudentpageManu>
+<div class="login">
+  <header>STUDENT COMPLAINTS </header>
+  <form action="#" [formGroup]="complient" (submit)="submitForm()">
+      <div class="field name">
+          <div class="input-area">
+              <input type="text" placeholder="Your Name" pattern="^[A-Z a-z]{3,15}$" name="uname"
+               formControlName="Name">
+               <i class="icon fas fa-user"></i>
+          </div>
+      </div><br><br>
+      <div class="information-error" *ngIf="complient.controls['Name'].dirty">
+        <p class="error" *ngIf="complient.controls['Name'].errors?.['required']"><i class="fas fa-exclamation-circle"></i>&numsp; Enter the Your Name</p>
+        <p class="error" *ngIf="complient.controls['Name'].errors?.['pattern']"><i class="fas fa-exclamation-circle"></i>&numsp; Enter Only Alphabet Letters</p>
+      </div>
+      <div class="field email">
+          <div class="input-area">
+              <input type="email" placeholder="Your Email"autocomplete="off"
+              pattern="^[a-z 0-9]+[@][a-z]+[\.]+[a-z]{2,3}$"
+              name="email"
+              class="input"
+              formControlName="email">
+          <i class="icon fas fa-envelope"></i>
+          </div>
+      </div>
+      <br><br>
+      <div
+        class="information-error"
+        *ngIf="complient.controls['email'].dirty"
+      >
+        <p
+          class="error"
+          *ngIf="complient.controls['email'].errors?.['required']"
+        >
+          <i class="fas fa-exclamation-circle"></i>&numsp; Enter the Email-id
+        </p>
+        <p
+          class="error"
+          *ngIf="complient.controls['email'].errors?.['pattern']"
+        >
+          <i class="fas fa-exclamation-circle"></i>&numsp; Enter the correct
+          email-id Formet
+        </p>
+      </div>
+      <div class="field subject">
+          <div class="input-area">
+              <input type="text" placeholder="Your Subject" pattern="^[A-Z a-z]{3,40}$" name="uname"
+              formControlName="Subject">
+              <i  class=" icon fa-solid fa-envelope-open-text"></i>
+          </div>
+        </div><br><br>
+        <div
+        class="information-error"
+        *ngIf="complient.controls['Subject'].dirty"
+      >
+        <p
+          class="error"
+          *ngIf="complient.controls['Subject'].errors?.['required']"
+        >
+          <i class="fas fa-exclamation-circle"></i>&numsp; Enter the Subject
+        </p>
+        <p
+          class="error"
+          *ngIf="complient.controls['Subject'].errors?.['pattern']"
+        >
+          <i class="fas fa-exclamation-circle"></i>&numsp; Enter Only Alphabet
+          Letters
+        </p>
+      </div>
+      <div class="field message">
+          <div class="input-area">
+              <input type="text" placeholder="Your Message" id="message" pattern="^[A-Z a-z]{3,500}$" name="uname"
+              formControlName="Message">
+              <i   id="icon" class="icon fa-solid fa-envelope-circle-check"></i>
+          </div>
+      </div>
+      <div
+      class="information-error"
+      *ngIf="complient.controls['Message'].dirty"
+    >
+      <p
+        class="error1"
+        *ngIf="complient.controls['Message'].errors?.['required']"
+      >
+        <i class="fas fa-exclamation-circle"></i>&numsp; Enter the Message
+      </p>
+      <p
+        class="error1"
+        *ngIf="complient.controls['Message'].errors?.['pattern']"
+      >
+        <i class="fas fa-exclamation-circle"></i>&numsp; Enter Only Alphabet
+        Letters
+      </p>
+    </div>
+    <button [disabled]="!complient.valid">Submit</button>
+  </form>
+</div>
+<app-footer></app-footer>

@@ -1,0 +1,104 @@
+<app-menu></app-menu>
+<section class="contact-section">
+  <div class="contact-bg">
+    <h3>Get in touch us</h3>
+    <div class="line">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <p class="text">
+      It made a remarkable growth in the placement edge in the last decade
+      by a strong, determinant and dynamic placement cell catering the need
+      of various industries by ensuring that our students meet the
+      necessities of the current industrial scenario.
+    </p>
+  </div>
+
+  <div class="contact-body">
+    <div class="contact-info">
+      <div>
+        <span><i class="fas fa-mobile-alt"></i></span>
+        <span>phone No.</span>
+        <span class="text">9865451374</span>
+      </div>
+      <div>
+        <span><i class="fas far fa-envelope-open"></i></span>
+        <span>Email.</span>
+        <span class="text">mail@company.com</span>
+      </div>
+      <div>
+        <span><i class="fas fas fa-map-marker-alt"></i></span>
+        <span>Address.</span>
+        <span class="text">45, Park Street , Erode</span>
+      </div>
+      <div>
+        <span><i class="fas far fa-clock"></i></span>
+        <span>Working hours.</span>
+        <span class="text">Monday-Friday (9:00 am - 5:00pm)</span>
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <form  [formGroup]="contactForm" (submit)="submitContactForm()">
+        <div class="name">
+          <input
+          type="text" autocomplete="off" pattern="^[A-Z a-z]{3,15}$" name="uname" placeholder="FirstName"
+          class="input" formControlName="firstname1" class="form-control"/>
+
+          <div class="information-error" *ngIf="contactForm.controls['firstname1'].dirty">
+            <p class="error" *ngIf="contactForm.controls['firstname1'].errors?.['required']"><i class="fas fa-exclamation-circle"></i>&numsp; FirstName is not Empty</p>
+            <p class="error" *ngIf="contactForm.controls['firstname1'].errors?.['pattern']"><i class="fas fa-exclamation-circle"></i>&numsp; Enter the correct FirstName</p>
+          </div>
+          <input type="text" autocomplete="off" pattern="^[A-Z a-z]{1,8}$" name="lname" placeholder="LastName"
+          class="input" formControlName="lastname1" class="form-control" />
+          <div class="information-error" *ngIf="contactForm.controls['lastname1'].dirty">
+            <p class="error" *ngIf="contactForm.controls['lastname1'].errors?.['required']"><i class="fas fa-exclamation-circle"></i>&numsp;lastName is not Empty</p>
+            <p class="error" *ngIf="contactForm.controls['lastname1'].errors?.['pattern']"><i class="fas fa-exclamation-circle"></i>&numsp; Enter the correct LastName</p>
+          </div>
+        </div>
+        <div>
+          <input type="email" autocomplete="off" pattern="^[a-z 0-9]+[@][a-z]+[\.]+[a-z]{2,3}$" name="email" placeholder="Email-id"
+          class="input"   formControlName="email1" class="form-control" />
+
+          <div class="information-error" *ngIf="contactForm.controls['email1'].dirty">
+            <p class="error" *ngIf="contactForm.controls['email1'].errors?.['required']"><i class="fas fa-exclamation-circle"></i>&numsp; Email-id is not Empty</p>
+            <p class="error" *ngIf="contactForm.controls['email1'].errors?.['pattern']"><i class="fas fa-exclamation-circle"></i>&numsp; Enter the correct email-id</p>
+          </div>
+          <input type="tel" autocomplete="off" pattern="^[6-9]{1}[0-9]{9}$" name="mobile" placeholder="Mobileno"
+          class="input"   formControlName="mobile1" class="form-control"  />
+          <div class="information-error" *ngIf="contactForm.controls['mobile1'].dirty">
+            <p class="error" *ngIf="contactForm.controls['mobile1'].errors?.['required']"><i class="fas fa-exclamation-circle"></i>&numsp; Email-id is not Empty</p>
+            <p class="error" *ngIf="contactForm.controls['mobile1'].errors?.['pattern']"><i class="fas fa-exclamation-circle"></i>&numsp; Enter the correct email-id</p>
+        </div>
+      </div>
+        <textarea
+          rows="5"
+          placeholder="message"
+          class="form-control"
+          formControlName="message1"
+        ></textarea>
+        <div class="information-error" *ngIf="contactForm.controls['message1'].dirty">
+          <p class="error1" *ngIf="contactForm.controls['message1'].errors?.['required']"><i class="fas fa-exclamation-circle"></i>&numsp; Messagebox is not Empty</p>
+        </div>
+          <br>
+        <button [disabled]="!contactForm.valid"  class="send-btn">Submit</button>
+      </form>
+
+      <div>
+                    <img src="../../assets/admission/istockphoto-1210502593-612x612-removebg-preview.png">
+                </div>
+    </div>
+  </div>
+
+  <div class="map">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62589.38973092332!2d77.68037733091721!3d11.346624085573197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba96f46762f4671%3A0xd97da6e3d9c7f75e!2sErode%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1665900302195!5m2!1sen!2sin"
+      width="100%"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </div>

@@ -1,0 +1,33 @@
+<app-staffpagemenu></app-staffpagemenu>
+<body>
+  <div class="heading-bg">
+    <section class="heading-link">
+      <h3><i class="fa-solid fa-graduation-cap"></i>Mark Your Attendence</h3>
+    </section>
+  </div>
+  <form >
+  <div class="table1">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>S.NO</th>
+          <th>NAME</th>
+          <th>DATE</th>
+          <th>TIME</th>
+          <th>ATTENDENCE</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let com of Complients">
+         <td>{{com.id}}</td>
+         <td>{{com.Name}}</td>
+         <td>{{com.email}}</td>
+         <td>{{com.Subject}}</td>
+         <td>{{com.Message}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</form>
+</body>
+<app-footer></app-footer>

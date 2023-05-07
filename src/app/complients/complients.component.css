@@ -1,0 +1,137 @@
+
+/* ------------------------------------------------------form------------------------------------------- */
+body{
+  background-color: #33ffff;
+}
+form #message{
+  height: 100px;
+}
+.login {
+  width: 500px;
+  padding: 40px 30px 70px 30px;
+  background:azure;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+}
+
+.login header {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.login form {
+  margin: 40px 0;
+}
+
+
+form .field1 {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form .field .input-area {
+  height: 50px;
+  width: 100%;
+  position: relative;
+}
+form  .field1 .input1-area .types {
+text-align: start;
+position: relative;
+display:inline-flex;
+text-align: right;
+}
+/* form .field1 .input1-area .head{
+  margin-right: 100px;
+  padding-right: 340px;
+  color: black;
+} */
+/* form .field1 .input1-area .head {
+  margin-right: 100px;
+  padding-right: 340px;
+  color: black;
+} */
+/* form .field1 .input1-area .head1{
+  margin-right: 100px;
+   padding-right: 370px;
+   color: black;
+}  */
+form  .field1 .input1-area .types label{
+  padding-right: 60px;
+  transform: translate(10px, -5px);
+}
+
+form input {
+  width: 70%;
+  height: 100%;
+  outline: none;
+  padding: 0 45px;
+  font-size: 18px;
+  /* caret-color: #5372F0; */
+  border-radius: 5px;
+  border: 1px solid #bfbfbf;
+  border-bottom-width: 2px;
+  transition: all 0.2s ease;
+
+}
+
+.field .input-area i {
+  position: absolute;
+  top: 50%;
+  font-size: 18px;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+
+.input-area .icon {
+  left: 15px;
+  color: #bfbfbf;
+  transition: color 0.2s ease;
+}
+
+
+form input::placeholder {
+  color: #bfbfbf;
+  font-size: 17px;
+}
+button {
+  height: 50px;
+  margin-top: 30px;
+  color: #fff;
+  border: none;
+  width: 70%;
+  background: #5372F0;
+  cursor: pointer;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  transform: translateY(70px);
+}
+
+button {
+  background: #2c52ed;
+}
+.gap{
+  position: relative;
+}
+.error{
+color: red;
+position: absolute;
+margin-top: -25px;
+margin-left: 40px;
+}
+.error1{
+  color: red;
+  position: absolute;
+  margin-top: 55px;
+  margin-left: 40px;
+  }
+.icon{
+  margin-left: 30px;
+}
+#icon{
+  margin-left: 30px;
+  margin-top: 25px;
+}

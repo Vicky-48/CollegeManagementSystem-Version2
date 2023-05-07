@@ -1,0 +1,509 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "users": [
+    {
+      "firstname1": "Vigneshwaran ",
+      "lastname1": "D",
+      "email1": "vignesh2152002@gmail.com",
+      "password1": "Vignesh@48",
+      "cpassword1": "Vignesh@48",
+      "id": 1
+    },
+    {
+      "firstname1": "Mani",
+      "lastname1": "S",
+      "email1": "mani@gmail.com",
+      "password1": "Mani@123",
+      "cpassword1": "Mani@123",
+      "id": 2
+    },
+    {
+      "firstname1": "gautam",
+      "lastname1": "KK",
+      "email1": "gautam@gmail.com",
+      "password1": "Gautam@123",
+      "cpassword1": "Gautam@123",
+      "id": 3
+    }
+  ],
+  "admin": [
+    {
+      "Aname": "admin123@gmail.com",
+      "Apassword": "Admin@123"
+    }
+  ],
+  "staff": [
+    {
+      "firstname1": "kannan",
+      "lastname1": "M",
+      "email1": "kannan@gmail.com",
+      "password1": "Kannan@123",
+      "cpassword1": "Kannan@123",
+      "id": 1
+    },
+    {
+      "firstname1": "Renuga",
+      "lastname1": "R",
+      "email1": "renuga@gmail.com",
+      "password1": "Renuga@123",
+      "cpassword1": "Renuga@123",
+      "id": 2
+    }
+  ],
+  "contactForm": [
+    {
+      "firstname1": "Vigneshwaran",
+      "lastname1": "D",
+      "email1": "vignesh2152002@gmail.com",
+      "mobile1": "9566506259",
+      "message1": "It is the nice website",
+      "id": 1
+    }
+  ],
+  "department": [
+    {
+      "title": "B.Tech. (Information Technology)",
+      "overview": "In the world of technology, the human life will be incomplete without the role of Information Technology.",
+      "Vision": "the world of technology, the human life will be incomplete without the role of Information Techno",
+      "Mission": "an life will be incomplete without the role of Information Techno",
+      "PEO": "an life will be incomplete without the role of Information Techno"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "title": "A Game of Thrones",
+      "description": "George R. R. Martin",
+      "price": 549,
+      "discountPercentage": 12.96,
+      "add": "Add to cart",
+      "buynow": "Buy Now",
+      "rating": 4.69,
+      "stock": 94,
+      "brand": "Book",
+      "catagory": "Fantasy",
+      "thumbnail": "../../assets/fantacy/fantasy1.jpg",
+      "images": "home-img/logo.png"
+    },
+    {
+      "id": 2,
+      "title": "The Fellowship of the Ring ",
+      "description": "J. R. R. Tolkien",
+      "price": 899,
+      "discountPercentage": 17.94,
+      "add": "Add to cart",
+      "buynow": "Buy Now",
+      "rating": 4.44,
+      "stock": 34,
+      "brand": "Book",
+      "catagory": "Fantasy",
+      "thumbnail": "../../assets/fantacy/fantasy2.jpg",
+      "images": [
+        "https://i.dummyjson.com/data/products/2/1.jpg",
+        "https://i.dummyjson.com/data/products/2/2.jpg",
+        "https://i.dummyjson.com/data/products/2/3.jpg",
+        "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "The Lion,TW & TW",
+      "description": " C. S. Lewis",
+      "price": 1249,
+      "discountPercentage": 15.46,
+      "add": "Add to cart",
+      "buynow": "Buy Now",
+      "rating": 4.09,
+      "stock": 36,
+      "brand": "Book",
+      "catagory": "Fantasy",
+      "thumbnail": "../../assets/fantacy/fantasy3.jpg",
+      "images": [
+        "https://i.dummyjson.com/data/products/3/1.jpg"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "The Colour of Magic",
+      "description": "Terry Pratchett",
+      "price": 280,
+      "discountPercentage": 17.91,
+      "add": "Add to cart",
+      "buynow": "Buy Now",
+      "rating": 4.3,
+      "stock": 123,
+      "brand": "Book",
+      "catagory": "Fantasy",
+      "thumbnail": "../../assets/fantacy/fantasy4.jpg",
+      "images": [
+        "https://i.dummyjson.com/data/products/4/1.jpg",
+        "https://i.dummyjson.com/data/products/4/2.jpg",
+        "https://i.dummyjson.com/data/products/4/3.jpg",
+        "https://i.dummyjson.com/data/products/4/4.jpg",
+        "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Assassin’s Apprentice",
+      "description": "Robin Hobb",
+      "price": 499,
+      "discountPercentage": 10.58,
+      "add": "Add to cart",
+      "buynow": "Buy Now",
+      "rating": 4.09,
+      "stock": 32,
+      "brand": "Book",
+      "catagory": "Fantasy",
+      "thumbnail": "../../assets/fantacy/fantasy5.jpg",
+      "images": [
+        "https://i.dummyjson.com/data/products/5/1.jpg",
+        "https://i.dummyjson.com/data/products/5/2.jpg",
+        "https://i.dummyjson.com/data/products/5/3.jpg"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "The Lies of Locke Lamora",
+      "description": "Scott Lynch",
+      "price": 499,
+      "detail": "",
+      "discountPercentage": 10.58,
+      "add": "Add to cart",
+      "buynow": "Buy Now",
+      "rating": 4.09,
+      "stock": 32,
+      "brand": "Book",
+      "catagory": "Fantasy",
+      "thumbnail": "../../assets/fantacy/fantasy6.jpg",
+      "images": [
+        "https://i.dummyjson.com/data/products/5/1.jpg",
+        "https://i.dummyjson.com/data/products/5/2.jpg",
+        "https://i.dummyjson.com/data/products/5/3.jpg"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "The Name of the Wind",
+      "description": "Patrick Rothfuss",
+      "price": 499,
+      "discountPercentage": 10.58,
+      "add": "Add to cart",
+      "buynow": "Buy Now",
+      "rating": 4.09,
+      "stock": 32,
+      "brand": "Book",
+      "catagory": "Fantasy",
+      "thumbnail": "../../assets/fantacy/fantasy7.jpg",
+      "images": [
+        "https://i.dummyjson.com/data/products/5/1.jpg",
+        "https://i.dummyjson.com/data/products/5/2.jpg",
+        "https://i.dummyjson.com/data/products/5/3.jpg"
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Dragonflight",
+      "description": "Anne McCaffrey",
+      "price": 499,
+      "discountPercentage": 10.58,
+      "add": "Add to cart",
+      "buynow": "Buy Now",
+      "rating": 4.09,
+      "stock": 32,
+      "brand": "Book",
+      "catagory": "Fantasy",
+      "thumbnail": "../../assets/fantacy/fantasy8.jpg",
+      "images": [
+        "https://i.dummyjson.com/data/products/5/1.jpg",
+        "https://i.dummyjson.com/data/products/5/2.jpg",
+        "https://i.dummyjson.com/data/products/5/3.jpg"
+      ]
+    },
+    {
+      "id": 9,
+      "title": "The Eye of the World",
+      "description": "Robert Jordan",
+      "price": 499,
+      "discountPercentage": 10.58,
+      "add": "Add to cart",
+      "buynow": "Buy Now",
+      "rating": 4.09,
+      "stock": 32,
+      "brand": "Book",
+      "catagory": "Fantasy",
+      "thumbnail": "../../assets/fantacy/fantasy9.jpg",
+      "images": [
+        "https://i.dummyjson.com/data/products/5/1.jpg",
+        "https://i.dummyjson.com/data/products/5/2.jpg",
+        "https://i.dummyjson.com/data/products/5/3.jpg"
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Throne of Glass",
+      "description": "Sarah J.Maas",
+      "price": 499,
+      "discountPercentage": 10.58,
+      "add": "Add to cart",
+      "buynow": "Buy Now",
+      "rating": 4.09,
+      "stock": 32,
+      "brand": "Book",
+      "catagory": "Fantasy",
+      "thumbnail": "../../assets/fantacy/fantasy10.jpg",
+      "images": [
+        "https://i.dummyjson.com/data/products/5/1.jpg",
+        "https://i.dummyjson.com/data/products/5/2.jpg",
+        "https://i.dummyjson.com/data/products/5/3.jpg"
+      ]
+    }
+  ],
+  "author": [
+    {
+      "id": 1,
+      "title": "A Game of Thrones",
+      "description": "George R. R. Martin",
+      "price": 549,
+      "discountPercentage": 12.96,
+      "add": "Add to cart",
+      "buynow": "Buy Now",
+      "rating": 4.69,
+      "stock": 94,
+      "brand": "Book",
+      "catagory": "Fantasy",
+      "thumbnail": "../../assets/fantacy/fantasy1.jpg",
+      "images": "home-img/logo.png"
+    },
+    {
+      "id": 2,
+      "title": "The Fellowship of the Ring ",
+      "description": "J. R. R. Tolkien",
+      "price": 899,
+      "discountPercentage": 17.94,
+      "add": "Add to cart",
+      "buynow": "Buy Now",
+      "rating": 4.44,
+      "stock": 34,
+      "brand": "Book",
+      "catagory": "Fantasy",
+      "thumbnail": "../../assets/fantacy/fantasy2.jpg",
+      "images": [
+        "https://i.dummyjson.com/data/products/2/1.jpg",
+        "https://i.dummyjson.com/data/products/2/2.jpg",
+        "https://i.dummyjson.com/data/products/2/3.jpg",
+        "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "The Lion,TW & TW",
+      "description": " C. S. Lewis",
+      "price": 1249,
+      "discountPercentage": 15.46,
+      "add": "Add to cart",
+      "buynow": "Buy Now",
+      "rating": 4.09,
+      "stock": 36,
+      "brand": "Book",
+      "catagory": "Fantasy",
+      "thumbnail": "../../assets/fantacy/fantasy3.jpg",
+      "images": [
+        "https://i.dummyjson.com/data/products/3/1.jpg"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "The Colour of Magic",
+      "description": "Terry Pratchett",
+      "price": 280,
+      "discountPercentage": 17.91,
+      "add": "Add to cart",
+      "buynow": "Buy Now",
+      "rating": 4.3,
+      "stock": 123,
+      "brand": "Book",
+      "catagory": "Fantasy",
+      "thumbnail": "../../assets/fantacy/fantasy4.jpg",
+      "images": [
+        "https://i.dummyjson.com/data/products/4/1.jpg",
+        "https://i.dummyjson.com/data/products/4/2.jpg",
+        "https://i.dummyjson.com/data/products/4/3.jpg",
+        "https://i.dummyjson.com/data/products/4/4.jpg",
+        "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Assassin’s Apprentice",
+      "description": "Robin Hobb",
+      "price": 499,
+      "discountPercentage": 10.58,
+      "add": "Add to cart",
+      "buynow": "Buy Now",
+      "rating": 4.09,
+      "stock": 32,
+      "brand": "Book",
+      "catagory": "Fantasy",
+      "thumbnail": "../../assets/fantacy/fantasy5.jpg",
+      "images": [
+        "https://i.dummyjson.com/data/products/5/1.jpg",
+        "https://i.dummyjson.com/data/products/5/2.jpg",
+        "https://i.dummyjson.com/data/products/5/3.jpg"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "The Lies of Locke Lamora",
+      "description": "Scott Lynch",
+      "price": 499,
+      "detail": "",
+      "discountPercentage": 10.58,
+      "add": "Add to cart",
+      "buynow": "Buy Now",
+      "rating": 4.09,
+      "stock": 32,
+      "brand": "Book",
+      "catagory": "Fantasy",
+      "thumbnail": "../../assets/fantacy/fantasy6.jpg",
+      "images": [
+        "https://i.dummyjson.com/data/products/5/1.jpg",
+        "https://i.dummyjson.com/data/products/5/2.jpg",
+        "https://i.dummyjson.com/data/products/5/3.jpg"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "The Name of the Wind",
+      "description": "Patrick Rothfuss",
+      "price": 499,
+      "discountPercentage": 10.58,
+      "add": "Add to cart",
+      "buynow": "Buy Now",
+      "rating": 4.09,
+      "stock": 32,
+      "brand": "Book",
+      "catagory": "Fantasy",
+      "thumbnail": "../../assets/fantacy/fantasy7.jpg",
+      "images": [
+        "https://i.dummyjson.com/data/products/5/1.jpg",
+        "https://i.dummyjson.com/data/products/5/2.jpg",
+        "https://i.dummyjson.com/data/products/5/3.jpg"
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Dragonflight",
+      "description": "Anne McCaffrey",
+      "price": 499,
+      "discountPercentage": 10.58,
+      "add": "Add to cart",
+      "buynow": "Buy Now",
+      "rating": 4.09,
+      "stock": 32,
+      "brand": "Book",
+      "catagory": "Fantasy",
+      "thumbnail": "../../assets/fantacy/fantasy8.jpg",
+      "images": [
+        "https://i.dummyjson.com/data/products/5/1.jpg",
+        "https://i.dummyjson.com/data/products/5/2.jpg",
+        "https://i.dummyjson.com/data/products/5/3.jpg"
+      ]
+    },
+    {
+      "id": 9,
+      "title": "The Eye of the World",
+      "description": "Robert Jordan",
+      "price": 499,
+      "discountPercentage": 10.58,
+      "add": "Add to cart",
+      "buynow": "Buy Now",
+      "rating": 4.09,
+      "stock": 32,
+      "brand": "Book",
+      "catagory": "Fantasy",
+      "thumbnail": "../../assets/fantacy/fantasy9.jpg",
+      "images": [
+        "https://i.dummyjson.com/data/products/5/1.jpg",
+        "https://i.dummyjson.com/data/products/5/2.jpg",
+        "https://i.dummyjson.com/data/products/5/3.jpg"
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Throne of Glass",
+      "description": "Sarah J.Maas",
+      "price": 499,
+      "discountPercentage": 10.58,
+      "add": "Add to cart",
+      "buynow": "Buy Now",
+      "rating": 4.09,
+      "stock": 32,
+      "brand": "Book",
+      "catagory": "Fantasy",
+      "thumbnail": "../../assets/fantacy/fantasy10.jpg",
+      "images": [
+        "https://i.dummyjson.com/data/products/5/1.jpg",
+        "https://i.dummyjson.com/data/products/5/2.jpg",
+        "https://i.dummyjson.com/data/products/5/3.jpg"
+      ]
+    }
+  ],
+  "attendence": [
+    {
+      "username": "Vigneshwaran ",
+      "data1": "2023-04-03T06:01:04.099Z",
+      "time1": "2023-04-03T06:01:04.099Z",
+      "select1": "Present",
+      "id": 1
+    },
+    {
+      "username": "Mani",
+      "data1": "2023-04-03T06:31:20.575Z",
+      "time1": "2023-04-03T06:31:20.575Z",
+      "select1": "Absent",
+      "id": 2
+    }
+  ],
+  "staffattendence": [
+    {
+      "username": "kannan",
+      "data1": "2023-04-05T05:35:29.705Z",
+      "time1": "2023-04-05T05:35:29.705Z",
+      "select1": "Absent",
+      "id": 1
+    },
+    {
+      "username": "Renuga",
+      "data1": "2023-04-05T05:52:53.009Z",
+      "time1": "2023-04-05T05:52:53.009Z",
+      "select1": "Present",
+      "id": 2
+    }
+  ],
+  "Complients": [
+    {
+      "Name": "Vignesh",
+      "email": "vignesh@gmail.com",
+      "Subject": "Supply Chain Management System",
+      "Message": "ywfeuhiwnrjgfreigietnbkngrkbjkrmbgrbiunkmknguihgvjnfkvriknrjbthirjbkrntbhritbrnbkrnbniorjbtoj",
+      "id": 1
+    }
+  ]
+}

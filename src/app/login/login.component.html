@@ -1,0 +1,39 @@
+<app-menu></app-menu>
+<body>
+<div class="image"></div>
+    <div class="login">
+        <!-- <div class="exit">
+        <a routerLink="/home">Exit <i class="fa-solid fa-share-from-square"></i></a>
+    </div> -->
+        <header>LOGIN</header>
+
+        <form [formGroup]="formLogin" (submit)="loginForm()">
+            <div class="field email">
+                <div class="input-area">
+                  <input type="email" autocomplete="off" pattern="^[a-z 0-9]+[@][a-z]+[\.]+[a-z]{2,3}$" name="email" placeholder="Email-id"
+                  class="input"  formControlName="email1"/>
+                  <i class="icon fas fa-user"></i>
+                </div>
+            </div>
+            <div class="information-error" *ngIf="formLogin.controls['email1'].dirty">
+              <p class="error" *ngIf="formLogin.controls['email1'].errors?.['required']"><i class="fas fa-exclamation-circle"></i>&numsp; Enter the Email-id</p>
+              <p class="error"  *ngIf="formLogin.controls['email1'].errors?.['pattern']"><i class="fas fa-exclamation-circle"></i>&numsp; Enter the correct email-id</p>
+            </div>
+            <div class="field password">
+                <div class="input-area">
+                  <input type="password" pattern="^[A-Z]{1}[a-z]+[@][1-9]{1,7}$"
+                  name="Password" placeholder="Password " class="input" required  formControlName="password1" />
+                  <i class="icon fas fa-lock"></i>
+                </div>
+            </div>
+            <div class="information-error1" *ngIf="formLogin.controls['password1'].dirty">
+              <p class="error1" *ngIf="formLogin.controls['password1'].errors?.['required']"><i class="fas fa-exclamation-circle"></i>&numsp;Enter the Password</p>
+              <p class="error1" *ngIf="formLogin.controls['password1'].errors?.['pattern']"><i title="password have min 7 digits, uppercase, lowercase, number and special character" class="fas fa-exclamation-circle"></i>&numsp;Enter Valid Password</p>
+            </div>
+            <div class="pass-txt"><a href="#">Forgot password?</a></div>
+            <input type="submit" value="Login" on>
+            <p id="register">Do not have an account?<a routerLink="/register">Register</a> </p>
+        </form>
+    </div>
+      </body>
+<app-footer></app-footer>

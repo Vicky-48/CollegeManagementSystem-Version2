@@ -1,0 +1,145 @@
+.heading-bg {
+  background-color: darkcyan;
+  background-size: cover;
+  background-position: center;
+}
+
+.heading-link {
+  text-align: center;
+  overflow: hidden;
+}
+
+.heading-link h3 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: inherit;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+/* .heading-link p {
+  font-size: 2rem;
+  line-height: 2;
+  color: var(--light-color);
+}
+
+.heading-link p a {
+  color: var(--blue);
+}
+
+.heading-link p a:hover {
+  text-decoration: underline;
+} */
+
+.heading {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 3.5rem;
+  text-transform: capitalize;
+  color: var(--dark-blue);
+}
+/* --------------------------------------------------------------------------------------------------------------- */
+
+.grid-container {
+  display: flex;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.grid {
+  display: flex;
+  padding-bottom: 20px;
+
+}
+#book-name{
+  padding-bottom: 10px;
+}
+
+#fantasyimg {
+  width: 200px;
+  height: 300px;
+  margin-top: 15px;
+  margin-left: -11px;
+  margin-right: -2px;
+}
+
+
+.grid-item-1 {
+  padding-left: 30px;
+  padding-right: 20px;
+  transition: all 0.4s linear;
+
+}
+
+.grid-item-1:hover{
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.32);
+
+}
+.star i{
+  position:static;
+
+}
+.star i :hover{
+  color: none;
+  cursor:none;
+}
+/* .grid-item-1 img:hover{
+  transform: scale(0.9);
+
+} */
+.grid-item-1 h4{
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+
+.buttons {
+  display: flex;
+  width: 50px;
+ margin: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+#slidebuttonleft1,
+#slidebuttonright1{
+  width: 20px;
+  height: 20px;
+  margin-left: 20%;
+
+}
+#slidebuttonleft2,
+#slidebuttonright2 {
+  width: 20px;
+  height: 20px;
+  margin-left: 20%;
+
+}
+#slidebuttonleft,
+#slidebuttonright {
+  width: 20px;
+  height: 20px;
+  margin-left: 20%;
+
+}
+.buttons img {
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.buttons :hover {
+  transform: scale(1.6);
+}
+
+#buy-now {
+  background-color: darkcyan;
+  text-align: center;
+  margin-top: -15px;
+  margin-bottom: 15px;
+}
+#fantasyimg{
+  border-radius: 5px;
+
+}

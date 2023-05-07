@@ -1,0 +1,214 @@
+/* -----------------------------------------------------------image-------------------------------------------- */
+body{
+  background-color: darkcyan;
+}
+.img{
+  background-image:url(../../assets/college.jpg);
+   background-size: cover;
+  background-position: center;
+  width: 100%;
+  height:1000px;
+  position: relative;
+  display:flex;
+}
+.img .content{
+/* padding-left: 700px; */
+/* font-family: 'Crimson Text', serif;; */
+/* font-weight: 700; */
+/* font-size: x-large; */
+/* font-style:italic; */
+/* padding-top: 100px; */
+
+/*padding-block: 100px; */
+/* text-decoration:double; */
+/* line-height: 2rem; */
+/* position: absolute; */
+background-color: rgb(0,0,0,0.7);
+width: 100%;
+/* height: 100%; */
+
+}
+.content .img1 {
+  background-image:url(../../assets/1b-removebg-preview.png);
+  height: 500px;
+  margin-top: 220px;
+  margin-left:200px;
+  background-repeat: no-repeat;
+}
+/* .img .content:hover{
+  color:black;
+  font-size: large;
+} */
+/* ................................................slider.................................... */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.content .text h2{
+  margin-top: -450px;
+  margin-left:550px;
+  font-size: 27px;
+  /* font-family: 'Crimson Text', serif; */
+  color:#ffffff;
+  font-weight: 500;
+  line-height: 60px;
+  cursor: pointer;
+}
+
+/* .........................................popup........................................ */
+.popup{
+  background-color: aliceblue;
+  width: 450px;
+  padding: 30px 40px;
+  position: absolute;
+  /* transform : translate(-200px,-50px);
+  left: 50%;
+  right: 50%;
+  border-radius: 8px; */
+  font-family:"Poopins",sans-serif;
+  left: 35%;
+  bottom: 50%;
+}
+.popup button{
+  display: block;
+  /* margin: 0 0 20px auto; */
+  background-color: transparent;
+  font-size: 30px;
+  color: black;
+  border: none;
+  /* outline: none; */
+  cursor: pointer;
+  margin-left: 370px;
+  margin-top: -20px;
+}
+.popup p{
+  font-size: 28px;
+  /* text-align: justify; */
+  margin: 20px 0;
+  text-align: -webkit-center;
+  transform: translateY(-20px);
+}
+.popup h1{
+  /* margin-bottom: 60px;
+  margin-left: 10px; */
+  text-align: center;
+  transform: translateY(-35px);
+}
+.popup a{
+  width: 150px;
+  position: relative;
+  margin: 100px;
+  text-align: center;
+  background-color: #00ffc4;;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 5px 50px;
+}
+.popup #close:hover{
+  background-color: red;
+  width: 30px;
+  height: 30px;
+  padding-bottom: 37px;
+}
+/* ------------------------------------------------centertag------------------------------------------- */
+.center-tag{
+  text-align: center;
+  font-size: 60px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  /* background-color: black; */
+   border:3px solid darkcyan ;
+  margin-left: 8px;
+  margin-right: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+display:flex;
+background-color: darkcyan;
+margin: 0%;
+
+
+}
+/* .center-tag li a{
+  color: aliceblue;
+}
+.center-tag li a:hover{
+  color: orangered;
+
+} */
+.center-tag{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  border-bottom:2px solid #a9a9a9 ;
+  border-top: 2px solid brown;
+}
+.center-tag p{
+  /* font-size:medium; */
+  font-size: 20px;
+  font-size: 20px;
+  font-style: oblique;
+  color: aliceblue;
+} .center-tag i{
+  cursor: pointer;
+  color:rgb(117, 196, 248);
+}
+.center-tag :hover{
+  transform: scale(0.9);
+}
+.icon_tag{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  /* color: #00ffc4; */
+}
+.details{
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  margin-top: 5%;
+  text-align: justify;
+}
+.engDetails{
+  /* position: absolute; */
+  margin: 2%;
+  padding: 10%;
+  /* background-color: aqua; */
+  border-radius: 25px;
+  border: 2px solid darkcyan;
+  margin-top: 120px;
+  margin-bottom: 20px;
+}
+.engDetails h2{
+  text-align: center;
+  color: #0de7c9;
+}
+.engDetails p{
+   margin-top: 5%;
+   color: #ffffff;
+}
+

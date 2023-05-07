@@ -1,0 +1,40 @@
+.container{
+  max-width: 120%;
+  background-color:  black;
+
+}
+.Row{
+display: flex;
+
+}
+.footer-col ul {
+  list-style: none;
+}
+
+
+.footer-col{
+width: 25%;
+padding: 15px;
+}
+.footer-col h4{
+  font-size: 20px;
+  color:#00ffc4;
+
+  font-style: oblique;
+  margin-bottom: 30px ;
+  font-weight: auto;
+  position: relative;
+}
+.footer-col ul li a,
+.footer-col ul li a abbr{
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 0;
+  font-style:none;
+  color:  aliceblue ;
+  display: block;
+  padding: 5px;
+}
+.footer-col address p{
+  color: aliceblue;
+}

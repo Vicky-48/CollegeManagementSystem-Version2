@@ -1,0 +1,32 @@
+body{
+  background-color: darkcyan;
+}
+.img{
+  background-image:url(../../assets/adminpage/4.jpg);
+   background-size: cover;
+  background-position: center;
+  width: 100%;
+  height:650px;
+  position: relative;
+  display:flex;
+}
+/* .content .img1 {
+    background-image:url(../../assets/12.png);
+    height: 50%;
+    width: 50%;
+    margin-top: 220px;
+    margin-left:200px;
+    background-repeat: no-repeat;
+  } */
+  .img .content{
+
+    background-color: rgb(0,0,0,0.5);
+    width: 100%;
+  }
+  .text h2{
+    text-align: center;
+    color: #fff;
+    font-size: xx-large;
+    margin-top: 300px;
+
+  }

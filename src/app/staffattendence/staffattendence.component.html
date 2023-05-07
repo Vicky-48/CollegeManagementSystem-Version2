@@ -1,0 +1,47 @@
+<app-staffpagemenu></app-staffpagemenu>
+<body>
+  <div class="heading-bg">
+    <section class="heading-link">
+      <h3><i class="fa-solid fa-graduation-cap"></i>Mark Your Attendence</h3>
+    </section>
+  </div>
+  <form #registerform="ngForm"  (ngSubmit)=" staffvalidate()">
+  <div class="table1">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>S.NO</th>
+          <th>DATE</th>
+          <th>TIME</th>
+          <th>Attendance</th>
+          <th>submit</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="active">
+          <td>{{loggedInStaff.firstname1}} </td>
+          <td>
+            {{date | date: 'dd/MM/yyyy'}}
+              <!-- <input type="date" class="date" name="date"  #udate="ngModel" [(ngModel)]="date"> -->
+          </td>
+
+          <td>
+            {{time | date:"HH:mm a"}}
+              <!-- <input type="time" class="time"  name="time" #utime="ngModel" [(ngModel)]="time"> -->
+          </td>
+          <td>
+              <select class="select"  name="select" #uselect="ngModel" [(ngModel)]="select">
+                  <option class="1">Present</option>
+                  <option class="1">Absent</option>
+                  <option class="1">Late</option>
+              </select>
+          </td>
+          <td><button type="submit" >Submit</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</form>
+</body>
+<app-footer></app-footer>
+

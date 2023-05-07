@@ -1,0 +1,73 @@
+.heading-bg {
+  background-color: darkcyan;
+  background-size: cover;
+  background-position: center;
+  border-bottom: 3px solid black;
+}
+.heading-link {
+  text-align: center;
+  overflow: hidden;
+}
+.heading-link h3 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: inherit;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+.table{
+border-collapse: collapse;
+margin: 25px 0;
+font-size: 15px;
+min-width: 70%;
+height: 100%;
+overflow: hidden;
+border-radius: 5px 5px 0 0;
+margin: auto;
+margin-top: 40px;
+margin-bottom: 100px;
+}
+table thead tr{
+color: #fff;
+background:darkcyan;
+text-align: center;
+font-weight: bold;
+}
+
+.table th,
+.table td{
+padding: 15px 20px;
+text-align: center;
+padding-bottom: 30px;
+padding-top: 30px;
+}
+.table tbody tr{
+border-bottom: 1px solid #ddd;
+}
+.table tbody tr:nth-of-type(odd){
+background: #f3f3f3;
+}
+.table tbody tr.active:hover{
+font-weight: bold;
+color:darkcyan;
+}
+.table tbody tr.active input:hover{
+  font-weight: bold;
+  color:darkcyan;
+}
+.table tbody tr:last-of-type{
+border-bottom: 3px solid darkcyan;
+}
+.table button{
+padding: 6px 20px;
+border-radius: 10px;
+cursor: pointer;
+background: transparent;
+border: 1px solid darkcyan;
+}
+.table button:hover{
+background: darkcyan;
+color: #fff;
+transition: 0.5rem;
+}
