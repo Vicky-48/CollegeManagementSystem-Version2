@@ -11,8 +11,8 @@ import { StaffattendenceService } from '../staffattendence.service';
 })
 export class StaffattendenceComponent implements OnInit {
   loggedInStaff:any;
-  date=new Date();
-  time=new Date();
+  date=new Date().toLocaleDateString();
+  time=new Date().toLocaleTimeString();
   constructor(private service:LoginService, private router:Router, private fb:FormBuilder,private user:StaffattendenceService) { }
   select:any="";
 
@@ -24,7 +24,7 @@ export class StaffattendenceComponent implements OnInit {
       select1:this.select,
     }
     this.user.addstaffattendenceInformation(body).subscribe(data=>{
-      alert("Form submitted");
+      alert("Attendence submitted");
       // this.route.navigate(['/login']);
     })
 }

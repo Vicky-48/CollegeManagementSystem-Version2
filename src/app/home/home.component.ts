@@ -10,6 +10,13 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    const offer_modal:any = document.querySelector(".popup");
+    offer_modal.showModal();
   }
+
+  display(){
+    const offer_modal:any = document.querySelector(".popup");
+    offer_modal.close();
+   }
 
 }

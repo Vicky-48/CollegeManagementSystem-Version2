@@ -1,3 +1,33 @@
 <app-adminmenu></app-adminmenu>
+<body>
+  <div class="heading-bg">
+    <section class="heading-link">
+      <h3><i class="fa-solid fa-graduation-cap"></i>Mark Your Attendence</h3>
+    </section>
+  </div>
+  <form >
+  <div class="table1">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>S.NO</th>
+          <th>NAME</th>
+          <th>DATE</th>
+          <th>TIME</th>
+          <th>ATTENDENCE</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let staff of staffattendence">
+         <td>{{staff.id}}</td>
+         <td>{{staff.username}}</td>
+         <td>{{staff.data1}}</td>
+         <td>{{staff.time1}}</td>
+         <td>{{staff.select1}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</form>
+</body>
 <app-footer></app-footer>
-

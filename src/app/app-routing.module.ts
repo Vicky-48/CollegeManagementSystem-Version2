@@ -3,7 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { AddstaffComponent } from './addstaff/addstaff.component';
 import { AdminhomeComponent } from './adminhome/adminhome.component';
 import { AdminmenuComponent } from './adminmenu/adminmenu.component';
-import { AdminprofileComponent } from './adminprofile/adminprofile.component';
 import { AdmissionComponent } from './admission/admission.component';
 import { AttendenceComponent } from './attendence/attendence.component';
 import { ComplientsComponent } from './complients/complients.component';
@@ -16,7 +15,6 @@ import { LoginComponent } from './login/login.component';
 import { MARKComponent } from './MARK/MARK.component';
 import { MenuComponent } from './menu/menu.component';
 import { PlacementComponent } from './placement/placement.component';
-import { ProfileComponent } from './profile/profile.component';
 import { RegisterComponent } from './register/register.component';
 import { StaffattendenceComponent } from './staffattendence/staffattendence.component';
 import { StaffhomeComponent } from './staffhome/staffhome.component';
@@ -28,6 +26,13 @@ import { StudenthomeComponent } from './Studenthome/Studenthome.component';
 import { StudentpageManuComponent } from './StudentpageManu/StudentpageManu.component';
 import { UploadmarkComponent } from './uploadmark/uploadmark.component';
 import { ViewstaffattendenceComponent } from './viewstaffattendence/viewstaffattendence.component';
+import { DepartmentchildComponent } from './departmentchild/departmentchild.component';
+import { ContactformviewComponent } from './contactformview/contactformview.component';
+import { StudentprofileComponent } from './Studentprofile/Studentprofile.component';
+import { EditprofileComponent } from './Editprofile/Editprofile.component';
+import { EditstaffprofileComponent } from './Editstaffprofile/Editstaffprofile.component';
+import { StaffreplyComponent } from './Staffreply/Staffreply.component';
+import { DeactivateGuard } from './deactivate.guard';
 
 const routes: Routes = [
   {
@@ -73,7 +78,8 @@ const routes: Routes = [
 },
 {
   path:'register',
-  component:RegisterComponent
+  component:RegisterComponent,
+  canDeactivate:[DeactivateGuard]
 },
 {
   path:'StudentpageManu',
@@ -94,10 +100,6 @@ const routes: Routes = [
 {
   path:'complients',
   component:ComplientsComponent
-},
-{
-  path:'profile',
-  component:ProfileComponent
 },
 {
   path:'staffpagemenu',
@@ -132,25 +134,41 @@ const routes: Routes = [
   component:AdminhomeComponent
 },
 {
-  path:'adminprofile',
-  component:AdminprofileComponent
-},
-{
   path:'viewstaffattendence',
   component:ViewstaffattendenceComponent
 },
 {
   path:'addstaff',
-  component:AddstaffComponent
+  component:AddstaffComponent,
+  canDeactivate:[DeactivateGuard]
 },
 {
   path:'uploadmark',
   component:UploadmarkComponent
 },
-// {
-//   path:'departmentChild',
-//   component:DepartmentChildComponent
-// }
+{
+  path:'departmentchild/:check',
+  component:DepartmentchildComponent
+},
+{
+  path:'contactformview',
+  component:ContactformviewComponent
+},
+{
+  path:'Studentprofile',
+  component:StudentprofileComponent
+},
+{
+  path:'Editprofile',
+  component:EditprofileComponent
+},{
+  path:'Editstaffprofile',
+  component:EditstaffprofileComponent
+},
+{
+  path:'Staffreply',
+  component:StaffreplyComponent
+}
 ];
 
 

@@ -12,22 +12,50 @@
         <tr>
           <th>S.NO</th>
           <th>NAME</th>
-          <th>DATE</th>
-          <th>TIME</th>
-          <th>ATTENDENCE</th>
+          <th>STUDENTNAME</th>
+          <th>SUBJECT</th>
+          <th>Querys</th>
+          <th>QueryReply</th>
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let com of Complients">
+        <tr *ngFor="let com of getstaffname">
          <td>{{com.id}}</td>
-         <td>{{com.Name}}</td>
-         <td>{{com.email}}</td>
+         <td>{{com.Staffname}}</td>
+         <td>{{com.username}}</td>
          <td>{{com.Subject}}</td>
          <td>{{com.Message}}</td>
+         <td><form action="#" [formGroup]="query" (submit)="submitForm(com.id)">
+          <div class="field message">
+            <div class="input-area">
+              <input type="text" id="message" name="uname" placeholder="Your Message" rows="4" cols="20" formControlName="Message"/>
+                <i   id="icon" class="icon fa-solid fa-envelope-circle-check"></i>
+            </div>
+        </div>
+        <div
+        class="information-error"
+        *ngIf="query.controls['Message'].dirty"
+      >
+        <p
+          class="error1"
+          *ngIf="query.controls['Message'].errors?.['required']"
+        >
+          <i class="fas fa-exclamation-circle"></i>&numsp; Enter the Message
+        </p>
+        <!-- <p
+          class="error1"
+          *ngIf="query.controls['Message'].errors?.['pattern']"
+        >
+          <i class="fas fa-exclamation-circle"></i>&numsp; Enter Only Alphabet
+          Letters
+        </p> -->
+      </div>
+      <button [disabled]="!query.valid">Submit</button>
+    </form></td>
         </tr>
       </tbody>
     </table>
   </div>
 </form>
 </body>
-<app-footer></app-footer>
+<!-- <app-footer></app-footer> -->

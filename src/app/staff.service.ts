@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -10,7 +11,7 @@ constructor(private client:HttpClient) { }
 
 addstaffInformation(body:any){
 
-  return this.client.post("http://localhost:3000/staff",body);
+  return this.client.post(environment.getStaff,body);
 
 }
 

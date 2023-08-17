@@ -1,7 +1,10 @@
 .nav{
-  background-color: rgb(17, 16, 16);
-  width: 100%;
-  height: 80px;
+  background: black;
+}
+.nav:after{
+  content: '';
+  clear: both;
+  display: table;
 }
 .nav .logo{
   float: left;
@@ -20,45 +23,122 @@
   margin-left: -50px;
 }
 .logo h4{
-  margin-top: -120px;
+  margin-top: -110px;
   margin-left: 40px;
 }
 .nav ul{
-float: right;
-list-style: none;
+  float: right;
+  list-style: none;
   margin-right: 40px;
   position: relative;
-
 }
 .nav ul li{
+  /* float: left; */
   display: inline-block;
-  margin: 0 10px;
-  line-height: 70px;
-  /* font-weight: 900px; */
+  background:black ;
+  margin:10px;
 }
 .nav ul li a{
-  color: aliceblue;
-  /* text-decoration: none; */
-  padding: 10px 10px;
-  text-transform: uppercase;
-  font-weight:bolder
+color: white;
+text-decoration: none;
+line-height: 70px;
+font-size: 20px;
+padding: 10px 8px;
+
 }
-.activated {
+
+.nav ul li a:hover:not(.activated) {
+  color:cyan;
+  border-radius: 4px;
+  padding: 0.5rem;
+  box-shadow: 0 0 5px #33ffff,
+                0 0 5px #66ffff;
+ }
+
+ .activated {
   color: cyan;
   box-shadow: none;
   border-radius: 4px;
   box-shadow: 0 0 5px #33ffff,
               0 0 5px #66ffff;
 }
-.activated i{
+.activated i {
   color: cyan;
 }
-/* .nav ul li a .fa{
-  padding-right: 10px;
-} */
-.nav ul li a:hover{
+.activated span{
+  color: cyan;
+}
+
+ .nav ul ul li a:hover:not(.activated){
+    color: cyan;
+    box-shadow: none;
+    border-radius: 4px;
+    padding: 0.5rem;
+    box-shadow: 0 0 5px #33ffff,
+                0 0 5px #66ffff;
+    z-index: 10000;
+ }
+/* .activated i {
   color:cyan;
+  border-radius: 4px;
+  padding: 0.5rem;
+  box-shadow: 0 0px 5px #33ffff,
+                0 0 5px #66ffff;
+} */
+/* .nav ul li a:hover{
+  color: cyan;
+  border-radius: 4px;
+   box-shadow: 0 0 5px #33ffff,
+              0 0 5px #66ffff;
+} */
+/* .nav ul .action a{
+  color:cyan;
+    border-radius: 4px;
+    box-shadow: 0 0 5px #33ffff,
+                0 0 5px #66ffff; }
+.nav ul ul li a:hover{
+  color: cyan;
+  box-shadow: none;
   border-radius: 4px;
   box-shadow: 0 0 5px #33ffff,
               0 0 5px #66ffff;
+  z-index: 10000;
+} */
+.nav ul ul{
+  position: absolute;
+  top: 90px;
+  opacity: 0;
+  border-top: 3px solid cyan;
+  visibility: hidden;
+  transition:top .3s;
+  z-index:100000;
+
 }
+.nav ul ul{
+  display:block;
+  background:black ;
+}
+.nav ul li:hover > ul{
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+}
+.nav ul ul li{
+  position: relative;
+  margin: 3px;
+  width: 160px;
+  float: none;
+  display: list-item;
+  border-bottom: 1px solid rgba(0,0,0,0.3) ;
+  /* margin-left: -30px; */
+}
+.nav ul ul li a{
+  line-height: 50px;
+
+
+
+}
+.show,.icon,input{
+  display: none;
+}
+

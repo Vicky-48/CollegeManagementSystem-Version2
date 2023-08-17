@@ -1,6 +1,7 @@
 body{
   /* background:black; */
   height: 100vh;
+  background-color: #9BE8D8;
 }
 /*Attendance List serction  */
 .heading-bg {
@@ -61,6 +62,7 @@ table thead tr{
   cursor: pointer;
   background: transparent;
   border: 1px solid darkcyan;
+  margin-top: 20px;
 }
 .table button:hover{
   background: darkcyan;
@@ -71,4 +73,49 @@ table thead tr{
   margin-top: 100px;
   margin-left: 30px;
   margin-right: 30px;
+}
+.error{
+  margin-right: 80px;
+  color: red;
+  position: absolute;
+  margin-top: -20px;
+}
+.error1{
+  margin-right: 70px;
+  color: red;
+  position: absolute;
+  margin-left: 35px;
+
+}
+input{
+transform: translateY(-10px);
+margin-top: 40px;
+width: 200px;
+height: 60px;
+padding-left: 40px;
+}
+
+.input-area .icon {
+  color: #bfbfbf;
+  transition: color 0.2s ease;
+  transform: translate(-230px,-10px);
+}
+
+
+form input:focus~.icon,
+form .field.valid .icon {
+  color: #5372F0;
+}
+
+
+
+form input::placeholder {
+  color: #bfbfbf;
+  font-size: 17px;
+  padding-left: -10px;
+  padding-top: 20px;
+}
+.gap{
+  margin-top: 2px;
+  position: relative;
 }

@@ -1,0 +1,20 @@
+<app-menu></app-menu>
+<div class="department-details">
+  <div class="thumbnail">
+    <img [src]=description.thumbnail>
+  </div>
+  <div class="department-details-2">
+    <div class="title">
+      <a >{{description.title}}</a>
+    </div>
+    <div class="description">
+      {{description.description}}
+    </div>
+    <div class="back">
+      <button  routerLink="/department"> {{description.close}}</button>
+      <!-- <a routerLink="/department">
+        {{description.close}}</a> -->
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

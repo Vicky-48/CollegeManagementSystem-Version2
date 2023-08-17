@@ -1,9 +1,10 @@
 {
   "posts": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "message": "User Logged In : vignesh2152002@gmail.com",
+      "level": "INFO",
+      "timestamp": "8/8/2023, 3:23:41 PM",
+      "id": 1
     }
   ],
   "comments": [
@@ -16,9 +17,21 @@
   "profile": {
     "name": "typicode"
   },
+  "studentLogin": [],
+  "staffLogin": [
+    {
+      "message": "User Logged In : kannan@gmail.com",
+      "level": "INFO",
+      "timestamp": "8/17/2023, 11:16:19 AM",
+      "id": 1
+    }
+  ],
+  "adminLogin": [],
+  "studentregister": [],
+  "staffregister": [],
   "users": [
     {
-      "firstname1": "Vigneshwaran ",
+      "firstname1": "vigneshwaran",
       "lastname1": "D",
       "email1": "vignesh2152002@gmail.com",
       "password1": "Vignesh@48",
@@ -34,7 +47,7 @@
       "id": 2
     },
     {
-      "firstname1": "gautam",
+      "firstname1": "Gautam",
       "lastname1": "KK",
       "email1": "gautam@gmail.com",
       "password1": "Gautam@123",
@@ -50,8 +63,8 @@
   ],
   "staff": [
     {
-      "firstname1": "kannan",
-      "lastname1": "M",
+      "firstname1": "Kannan",
+      "lastname1": "D",
       "email1": "kannan@gmail.com",
       "password1": "Kannan@123",
       "cpassword1": "Kannan@123",
@@ -78,432 +91,281 @@
   ],
   "department": [
     {
-      "title": "B.Tech. (Information Technology)",
-      "overview": "In the world of technology, the human life will be incomplete without the role of Information Technology.",
-      "Vision": "the world of technology, the human life will be incomplete without the role of Information Techno",
-      "Mission": "an life will be incomplete without the role of Information Techno",
-      "PEO": "an life will be incomplete without the role of Information Techno"
-    }
-  ],
-  "products": [
-    {
       "id": 1,
-      "title": "A Game of Thrones",
-      "description": "George R. R. Martin",
-      "price": 549,
-      "discountPercentage": 12.96,
-      "add": "Add to cart",
-      "buynow": "Buy Now",
-      "rating": 4.69,
-      "stock": 94,
-      "brand": "Book",
-      "catagory": "Fantasy",
-      "thumbnail": "../../assets/fantacy/fantasy1.jpg",
-      "images": "home-img/logo.png"
+      "title": "B.Tech.(Information Technology)",
+      "open": "Open",
+      "close": "Close",
+      "description": "BTech IT is a bachelor’s degree course in Information Technology, which has a duration of 4 years, but it can be extended up to 6 years. BTech Information Technology is the study of computer-based systems and deals with both hardware as well as software components of a computer system. In order to stand eligible for the BTech IT course, the students must have passed 10+2 from a recognized board with Physics, Chemistry, and Mathematics as compulsory subjects. Some of the important subjects which are included in the BTech IT Syllabus are Computer Organization, Operating System, Computer Networks, and many more. ",
+      "thumbnail": "../../assets/it.jpg"
     },
     {
       "id": 2,
-      "title": "The Fellowship of the Ring ",
-      "description": "J. R. R. Tolkien",
-      "price": 899,
-      "discountPercentage": 17.94,
-      "add": "Add to cart",
-      "buynow": "Buy Now",
-      "rating": 4.44,
-      "stock": 34,
-      "brand": "Book",
-      "catagory": "Fantasy",
-      "thumbnail": "../../assets/fantacy/fantasy2.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/2/1.jpg",
-        "https://i.dummyjson.com/data/products/2/2.jpg",
-        "https://i.dummyjson.com/data/products/2/3.jpg",
-        "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
-      ]
+      "title": "Computer Science & Engineering",
+      "open": "Open",
+      "close": "Close",
+      "description": "Computer Science Engineering is a course that deals with the design, implementation, and management of information systems of both software & hardware processes. A computer scientist specializes in the theory of computation and the design of computational systems. Computer Science engineering aids with various disciplines such as electrical and electronics engineering, information technology, software engineering, and more. Computer Science Engineering courses are offered at both undergraduate and postgraduate levels in the form of B.E, B.Tech, or M.Tech degree programs. B.Tech in computer science is popular at UG, whereas M.Tech in computer science is popular at PG levels After completing a degree program in computer science, candidates can find various entry-level jobs in the IT industry or related fields, given they fulfill the required skill set such as knowledge of subjects like programming, database management, data structures and more. ",
+      "thumbnail": "../../assets/cse.jpg"
     },
     {
       "id": 3,
-      "title": "The Lion,TW & TW",
-      "description": " C. S. Lewis",
-      "price": 1249,
-      "discountPercentage": 15.46,
-      "add": "Add to cart",
-      "buynow": "Buy Now",
-      "rating": 4.09,
-      "stock": 36,
-      "brand": "Book",
-      "catagory": "Fantasy",
-      "thumbnail": "../../assets/fantacy/fantasy3.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/3/1.jpg"
-      ]
+      "title": "Mechanical Engineering",
+      "open": "Open",
+      "close": "Close",
+      "description": "Technically, mechanical engineering is the application of the principles and problem-solving techniques of engineering from design to manufacturing to the marketplace for any object. Mechanical engineers analyze their work using the principles of motion, energy, and force—ensuring that designs function safely, efficiently, and reliably, all at a competitive cost. Mechanical engineers make a difference. That's because mechanical engineering careers center on creating technologies to meet human needs. Virtually every product or service in modern life has probably been touched in some way by a mechanical engineer to help humankind. This includes solving today's problems and creating future solutions in health care, energy, transportation, world hunger, space exploration, climate change, and more.",
+      "thumbnail": "../../assets/mech.jpg"
     },
     {
       "id": 4,
-      "title": "The Colour of Magic",
-      "description": "Terry Pratchett",
-      "price": 280,
-      "discountPercentage": 17.91,
-      "add": "Add to cart",
-      "buynow": "Buy Now",
-      "rating": 4.3,
-      "stock": 123,
-      "brand": "Book",
-      "catagory": "Fantasy",
-      "thumbnail": "../../assets/fantacy/fantasy4.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/4/1.jpg",
-        "https://i.dummyjson.com/data/products/4/2.jpg",
-        "https://i.dummyjson.com/data/products/4/3.jpg",
-        "https://i.dummyjson.com/data/products/4/4.jpg",
-        "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
-      ]
+      "title": "B.Tech.(Aerospace Engineering)",
+      "open": "Open",
+      "close": "Close",
+      "description": "B.Tech. programme in Aerospace Engineering is aimed at imparting sound knowledge in the fundamental areas of the discipline and also expose students to advanced applications of this knowledge. The students will get the specialized training in the design and development of launch vehicles, aircraft and space craft. Aerospace Engineering deals with unlike most traditional ground based systems, optimality and reliability are of paramount importance in such systems. This necessitates accurate theoretical and experimental analyses of a variety of phenomena, and performance predictions of a variety of complex systems. Aerospace Engineering is the discipline which is closest to what is popularly known as Rocket Science",
+      "thumbnail": "../../assets/aerospace.jpg"
     },
     {
       "id": 5,
-      "title": "Assassin’s Apprentice",
-      "description": "Robin Hobb",
-      "price": 499,
-      "discountPercentage": 10.58,
-      "add": "Add to cart",
-      "buynow": "Buy Now",
-      "rating": 4.09,
-      "stock": 32,
-      "brand": "Book",
-      "catagory": "Fantasy",
-      "thumbnail": "../../assets/fantacy/fantasy5.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/5/1.jpg",
-        "https://i.dummyjson.com/data/products/5/2.jpg",
-        "https://i.dummyjson.com/data/products/5/3.jpg"
-      ]
+      "title": "B.Tech.(Agricultural Engineering)",
+      "open": "Open",
+      "close": "Close",
+      "description": "B.Tech Agricultural Engineering is the engineering discipline that imparts engineering, science, and technology to improve and maintain agricultural production. B.Tech in Agricultural Engineering subjects include principles of agriculture, soil science, horticultural and field crops, and surveying and leveling. The course falls under the umbrella of B.Tech and therefore, follows a similar admission procedure. B.Tech Agricultural Engineering's job scope is excellent as the graduates can find various career options and jobs in agri-business firms, food processing, agricultural research and development firms, government sectors, etc. There are many job opportunities and career options available for B.Tech graduates of this field. Some of these include agri-business firms, food processing companies, research firms, and more.",
+      "thumbnail": "../../assets/agri.jpg"
     },
     {
       "id": 6,
-      "title": "The Lies of Locke Lamora",
-      "description": "Scott Lynch",
-      "price": 499,
-      "detail": "",
-      "discountPercentage": 10.58,
-      "add": "Add to cart",
-      "buynow": "Buy Now",
-      "rating": 4.09,
-      "stock": 32,
-      "brand": "Book",
-      "catagory": "Fantasy",
-      "thumbnail": "../../assets/fantacy/fantasy6.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/5/1.jpg",
-        "https://i.dummyjson.com/data/products/5/2.jpg",
-        "https://i.dummyjson.com/data/products/5/3.jpg"
-      ]
+      "title": "Artificial Intelligence Engineering",
+      "open": "Open",
+      "close": "Close",
+      "description": "Artificial intelligence engineers are individuals who use AI and machine learning techniques to develop applications and systems that can help organizations increase efficiency, cut costs, increase profits, and make better business decisions. AI engineering focuses on developing the tools, systems, and processes that enable artificial intelligence to be applied in the real world. Any application where machines mimic human functions, such as solving problems and learning, can be considered artificial intelligence. Algorithms are “trained” by data, which helps them to learn and perform better.",
+      "thumbnail": "../../assets/ai.jpg"
     },
     {
       "id": 7,
-      "title": "The Name of the Wind",
-      "description": "Patrick Rothfuss",
-      "price": 499,
-      "discountPercentage": 10.58,
-      "add": "Add to cart",
-      "buynow": "Buy Now",
-      "rating": 4.09,
-      "stock": 32,
-      "brand": "Book",
-      "catagory": "Fantasy",
-      "thumbnail": "../../assets/fantacy/fantasy7.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/5/1.jpg",
-        "https://i.dummyjson.com/data/products/5/2.jpg",
-        "https://i.dummyjson.com/data/products/5/3.jpg"
-      ]
+      "title": "B.Tech.(Biochemical Engineering)",
+      "open": "Open",
+      "close": "Close",
+      "description": "vB.Tech in Biochemical Engineering is a programme that covers various subjects related to the chemical process, production and development of biochemical products. This branch of engineering comprises of various aspects of biology, technology and engineering in order to come up with groundbreaking research to help improve the quality of human lifestyle. Biochemical engineers learn about the development process of a variety of natural as well as artificial substances. These processes may include oil refining, ecological development, environmental changes, developing medicines, etc. B.Tech in Biochemical Engineering .",
+      "thumbnail": "../../assets/bio-tech.jpg"
     },
     {
       "id": 8,
-      "title": "Dragonflight",
-      "description": "Anne McCaffrey",
-      "price": 499,
-      "discountPercentage": 10.58,
-      "add": "Add to cart",
-      "buynow": "Buy Now",
-      "rating": 4.09,
-      "stock": 32,
-      "brand": "Book",
-      "catagory": "Fantasy",
-      "thumbnail": "../../assets/fantacy/fantasy8.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/5/1.jpg",
-        "https://i.dummyjson.com/data/products/5/2.jpg",
-        "https://i.dummyjson.com/data/products/5/3.jpg"
-      ]
+      "title": "B.Tech.(Biomedical Engineering)",
+      "open": "Open",
+      "close": "Close",
+      "description": "Biomedical engineering is a branch of engineering that deals with the application of biological science to improve healthcare diagnosis, monitoring and therapy. They aim to combine the engineering principles with medical science to create and design equipment, devices, computers systems and software. The various domains in the medical industry offer a large number of opportunities for biomedical engineers with lucrative B Tech Biomedical Engineering salary packages. The career prospects in this profession are better at both, national and international level. Mentioned below are some of the B Tech Biomedical Engineering jobs which biomedical engineers work in after completing their graduation.",
+      "thumbnail": "../../assets/bio.jpg"
     },
     {
       "id": 9,
-      "title": "The Eye of the World",
-      "description": "Robert Jordan",
-      "price": 499,
-      "discountPercentage": 10.58,
-      "add": "Add to cart",
-      "buynow": "Buy Now",
-      "rating": 4.09,
-      "stock": 32,
-      "brand": "Book",
-      "catagory": "Fantasy",
-      "thumbnail": "../../assets/fantacy/fantasy9.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/5/1.jpg",
-        "https://i.dummyjson.com/data/products/5/2.jpg",
-        "https://i.dummyjson.com/data/products/5/3.jpg"
-      ]
+      "title": "Business Engineering",
+      "open": "Open",
+      "close": "Close",
+      "description": "Business engineering (BE) is the development and implementation of business solutions, from business model to business processes and organizational structure to information systems and information technology (cf.). Business engineering focuses on developing innovative business solutions that take a sociotechnical systems (STS) approach. The STS approach addresses an enterprise as a total system in the same manner as an airplane system or an industrial facility, since they possess a similar level of complexity. Business engineering combines knowledge in the fields of business administration, Industrial Engineering, as well as information technology and connects it to all aspects of transformation, from means of presentation to process models to cultural and political considerations (cf. Baumöl/Jung).A person is referred to as a Business Engineer when the person is a hybrid between an entrepreneur and an engineer. They must poses the understanding of how the business world operates at both macro and micro levels and be in a position to come up with solutions based on various key elements.",
+      "thumbnail": "../../assets/business.jpg"
     },
     {
       "id": 10,
-      "title": "Throne of Glass",
-      "description": "Sarah J.Maas",
-      "price": 499,
-      "discountPercentage": 10.58,
-      "add": "Add to cart",
-      "buynow": "Buy Now",
-      "rating": 4.09,
-      "stock": 32,
-      "brand": "Book",
-      "catagory": "Fantasy",
-      "thumbnail": "../../assets/fantacy/fantasy10.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/5/1.jpg",
-        "https://i.dummyjson.com/data/products/5/2.jpg",
-        "https://i.dummyjson.com/data/products/5/3.jpg"
-      ]
-    }
-  ],
-  "author": [
-    {
-      "id": 1,
-      "title": "A Game of Thrones",
-      "description": "George R. R. Martin",
-      "price": 549,
-      "discountPercentage": 12.96,
-      "add": "Add to cart",
-      "buynow": "Buy Now",
-      "rating": 4.69,
-      "stock": 94,
-      "brand": "Book",
-      "catagory": "Fantasy",
-      "thumbnail": "../../assets/fantacy/fantasy1.jpg",
-      "images": "home-img/logo.png"
+      "title": "B.Tech.(Chemical Engineering)",
+      "open": "Open",
+      "close": "Close",
+      "description": "BTech Chemical Engineering is an undergraduate degree in engineering that studies the principles and laws of physics, chemistry, mathematics, biology, and economics, to the mechanism of converting chemicals or raw components into more useful or valuable forms. They work in far-ranging industries from biomedical or nanotechnology to food processing and petrochemicals. Individuals in chemical engineering work to make our lives easier. B Tech Chemical Engineering course is a four-year-long engineering programme that develops a better understanding of the development and operations carried out ",
+      "thumbnail": "../../assets/chemical.jpg"
     },
     {
-      "id": 2,
-      "title": "The Fellowship of the Ring ",
-      "description": "J. R. R. Tolkien",
-      "price": 899,
-      "discountPercentage": 17.94,
-      "add": "Add to cart",
-      "buynow": "Buy Now",
-      "rating": 4.44,
-      "stock": 34,
-      "brand": "Book",
-      "catagory": "Fantasy",
-      "thumbnail": "../../assets/fantacy/fantasy2.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/2/1.jpg",
-        "https://i.dummyjson.com/data/products/2/2.jpg",
-        "https://i.dummyjson.com/data/products/2/3.jpg",
-        "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
-      ]
+      "id": 11,
+      "title": "B.Tech.(Civil Engineering)",
+      "open": "Open",
+      "close": "Close",
+      "description": "B.Tech in Civil Engineering is a four year undergraduate engineering program that includes the study of material science, structural designs, construction materials and management. Civil engineering is all about planning, designing and supervising the construction of facilities essential to modern life like bridges, highways, offshore buildings, colleges and schools, airports, dams, water facilities and sewage systems. Individuals in this engineering specialisation also improve existing infrastructure that has been neglected and help to preserve the environment by assisting in the cleaning up of pollution and devising new ways to reduce future pollution of water, air and land.",
+      "thumbnail": "../../assets/civile.jpg"
     },
     {
-      "id": 3,
-      "title": "The Lion,TW & TW",
-      "description": " C. S. Lewis",
-      "price": 1249,
-      "discountPercentage": 15.46,
-      "add": "Add to cart",
-      "buynow": "Buy Now",
-      "rating": 4.09,
-      "stock": 36,
-      "brand": "Book",
-      "catagory": "Fantasy",
-      "thumbnail": "../../assets/fantacy/fantasy3.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/3/1.jpg"
-      ]
+      "id": 25,
+      "title": "Electrical and Electronics Engineering ",
+      "open": "Open",
+      "close": "Close",
+      "description": "Electrical and Electronics Engineering is an integrated branch of engineering. This course deals with the technological aspects of electricity, especially the design and application of circuitry and electronic equipment. It also includes the concept of power generation and distribution, communication and machine control. This engineering branch focuses on the practical application of electricity. It also specializes in design, construction and uses of electrical systems in our lives. Electrical and electronics engineering is offered in various professional courses such as Diploma, B.Tech, B.E. and M.Tech. E.E.E. (Electrical and Electronics Engineering) incorporates fundamental knowledge in core disciplines such as control systems, communications, signal processing, micro-processors, radio frequency design, electric machines and power generation. In this course students are taught about everything ranging from semiconductors, analog electronics, and power systems to big transmission lines, digital electronics, electrical machines (AC and DC) and control systems.",
+      "thumbnail": "../../assets/eee.jpg"
     },
     {
-      "id": 4,
-      "title": "The Colour of Magic",
-      "description": "Terry Pratchett",
-      "price": 280,
-      "discountPercentage": 17.91,
-      "add": "Add to cart",
-      "buynow": "Buy Now",
-      "rating": 4.3,
-      "stock": 123,
-      "brand": "Book",
-      "catagory": "Fantasy",
-      "thumbnail": "../../assets/fantacy/fantasy4.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/4/1.jpg",
-        "https://i.dummyjson.com/data/products/4/2.jpg",
-        "https://i.dummyjson.com/data/products/4/3.jpg",
-        "https://i.dummyjson.com/data/products/4/4.jpg",
-        "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
-      ]
+      "id": 13,
+      "title": "B.Tech.(Dairy Technology)",
+      "open": "Open",
+      "close": "Close",
+      "description": "B.Tech dairy technology or bachelor of technology in dairy technology is a 4-year undergraduate degree programme that provides extensive training in the manufacturing of milk and goods as well as the engineering aspects of dairy processing machinery. Students of B.Tech dairy technology are taught manufacturing, distribution and quality management of dairy-related products. It also focuses on technologies for producing various milk by-products such as butter, ice-creams and other dairy products using scientific technology and engineering equipment and machinery. 10+2 Science stream candidates who have studied Physics, Chemistry, Mathematics and English at the qualifying exam with an overall aggregate score of 50% are eligible for admission into the B.Tech dairy technology programme. There are many government and self-financing B.Tech dairy institutions where interested candidates can apply for admission after fulfiling the eligibility criteria. Different types of institutions have different admission mechanisms. After completing their study, the candidates get hired by reputed milk and dairy sector companies like Amul, Mother Dairy, Nestle, Hindustan Unilever etc. ",
+      "thumbnail": "../../assets/diary.jpg"
     },
     {
-      "id": 5,
-      "title": "Assassin’s Apprentice",
-      "description": "Robin Hobb",
-      "price": 499,
-      "discountPercentage": 10.58,
-      "add": "Add to cart",
-      "buynow": "Buy Now",
-      "rating": 4.09,
-      "stock": 32,
-      "brand": "Book",
-      "catagory": "Fantasy",
-      "thumbnail": "../../assets/fantacy/fantasy5.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/5/1.jpg",
-        "https://i.dummyjson.com/data/products/5/2.jpg",
-        "https://i.dummyjson.com/data/products/5/3.jpg"
-      ]
+      "id": 16,
+      "title": "B.Tech.(Media Engineering)",
+      "open": "Open",
+      "close": "Close",
+      "description": "B Tech in Electronics and Media Technology is a very prominent and booming disciple of engineering which focuses on the technologies and engineering equipment used in the media industry. Like any other engineering course, B Tech Electronics and Media Technology is a four-year undergraduate degree course. The B Tech Electronics and Media Technology course gives detailed knowledge about the development, improvement, and implementation of new technologies used in software development and equipment. With this B Tech course, students will learn about all aspects of the audiovisual medium which includes the process of pre-production to post-production.",
+      "thumbnail": "../../assets/media.jpg"
     },
     {
-      "id": 6,
-      "title": "The Lies of Locke Lamora",
-      "description": "Scott Lynch",
-      "price": 499,
-      "detail": "",
-      "discountPercentage": 10.58,
-      "add": "Add to cart",
-      "buynow": "Buy Now",
-      "rating": 4.09,
-      "stock": 32,
-      "brand": "Book",
-      "catagory": "Fantasy",
-      "thumbnail": "../../assets/fantacy/fantasy6.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/5/1.jpg",
-        "https://i.dummyjson.com/data/products/5/2.jpg",
-        "https://i.dummyjson.com/data/products/5/3.jpg"
-      ]
+      "id": 17,
+      "title": "B.Tech.(Petroleum Engineering)",
+      "open": "Open",
+      "close": "Close",
+      "description": "B. Tech in Petroleum Engineering is an interesting field of engineering concerned with activities related to the production of hydrocarbons in the form of natural gas or crude oil. B.Tech in Petroleum Engineering, one can learn about the physical properties of oil and gas, the process of oil exploration and processing of crude oils. Students will study Physics, Chemistry, Mathematics, Geology, Economics and thermodynamics for starters. With the rapid growth of technology, the need for hydrocarbons as a fuel component is rising day by day.",
+      "thumbnail": "../../assets/petrol.jpg"
     },
     {
-      "id": 7,
-      "title": "The Name of the Wind",
-      "description": "Patrick Rothfuss",
-      "price": 499,
-      "discountPercentage": 10.58,
-      "add": "Add to cart",
-      "buynow": "Buy Now",
-      "rating": 4.09,
-      "stock": 32,
-      "brand": "Book",
-      "catagory": "Fantasy",
-      "thumbnail": "../../assets/fantacy/fantasy7.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/5/1.jpg",
-        "https://i.dummyjson.com/data/products/5/2.jpg",
-        "https://i.dummyjson.com/data/products/5/3.jpg"
-      ]
+      "id": 18,
+      "title": "B.Tech.(Textile engineering)",
+      "open": "Open",
+      "close": "Close",
+      "description": "The Textile Technology course is one of the popular courses among Indian students eager to enter the textile industry. With the rise in consumerism in the fashion industry, the textile industry is growing at a rapid speed. To keep pace with the consumption rate, the industry requires new technology and techniques for better productivity. Textile Technology course is one of the domains under engineering and focuses on introducing scientific techniques and processes related to a series of textile production. Students are taught about the field specialisations such as fibre manufacturing, fabric draping, textile colouring, and garment production.",
+      "thumbnail": "../../assets/texttile.jpg"
     },
     {
-      "id": 8,
-      "title": "Dragonflight",
-      "description": "Anne McCaffrey",
-      "price": 499,
-      "discountPercentage": 10.58,
-      "add": "Add to cart",
-      "buynow": "Buy Now",
-      "rating": 4.09,
-      "stock": 32,
-      "brand": "Book",
-      "catagory": "Fantasy",
-      "thumbnail": "../../assets/fantacy/fantasy8.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/5/1.jpg",
-        "https://i.dummyjson.com/data/products/5/2.jpg",
-        "https://i.dummyjson.com/data/products/5/3.jpg"
-      ]
+      "id": 19,
+      "title": "B.Tech.(Electronics Engineering)",
+      "open": "Open",
+      "close": "Close",
+      "description": "Electronics Engineering is a specialisation of engineering that studies and utilises nonlinear and active electrical components to design the electronic circuits, devices, the integrated circuits and their systems. Electronics Engineering is a form of engineering that includes electronic circuits, devices, and equipment systems. The whole idea behind Electronics Engineering is about designing, making, running, and servicing the things that people need. It is a branch of electrical engineering. This field provides interesting and challenging jobs to the aspirants who wish to pursue this course and complete their degree in Electronics Engineering. Electronics Engineering is one of the fields that need creativity in the field while working. Most of the projects done under Electronics Engineering are interesting and need creativity. The field provides opportunities such as Professor, Electronics and Communication Consultant, Senior Sales Manager, and many other job profiles depending on the job profile and interest to work in the field.",
+      "thumbnail": "../../assets/electric.jpg"
     },
     {
-      "id": 9,
-      "title": "The Eye of the World",
-      "description": "Robert Jordan",
-      "price": 499,
-      "discountPercentage": 10.58,
-      "add": "Add to cart",
-      "buynow": "Buy Now",
-      "rating": 4.09,
-      "stock": 32,
-      "brand": "Book",
-      "catagory": "Fantasy",
-      "thumbnail": "../../assets/fantacy/fantasy9.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/5/1.jpg",
-        "https://i.dummyjson.com/data/products/5/2.jpg",
-        "https://i.dummyjson.com/data/products/5/3.jpg"
-      ]
+      "id": 20,
+      "title": "B.Tech.(Energy Technology)",
+      "open": "Open",
+      "close": "Close",
+      "description": "Bachelor of Technology in Energy Engineering degree program trains students to be problem-solvers, entrepreneurs, and leaders in the energy industry. This degree prepares graduates to pursue advanced degrees in energy or environmental health and safety. Students who graduate from this program are well-prepared to work in any field related to energy. The curriculum in the Energy Engineering Program is designed to give students a comprehensive overview of the energy sector. Students will learn about energy resources, efficiency, and the energy market while gaining the skills they need to be successful in this field. The program includes coursework in the physical sciences, social sciences, and energy-related topics, and culminates with a two-semester capstone project.",
+      "thumbnail": "../../assets/energe.jpg"
     },
     {
-      "id": 10,
-      "title": "Throne of Glass",
-      "description": "Sarah J.Maas",
-      "price": 499,
-      "discountPercentage": 10.58,
-      "add": "Add to cart",
-      "buynow": "Buy Now",
-      "rating": 4.09,
-      "stock": 32,
-      "brand": "Book",
-      "catagory": "Fantasy",
-      "thumbnail": "../../assets/fantacy/fantasy10.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/5/1.jpg",
-        "https://i.dummyjson.com/data/products/5/2.jpg",
-        "https://i.dummyjson.com/data/products/5/3.jpg"
-      ]
+      "id": 23,
+      "title": "B.Tech.(Genetic Engineering)",
+      "open": "Open",
+      "close": "Close",
+      "description": "B. Tech in Genetic Engineering is a four-year undergraduate program involving the study of deliberate modification of an organism’s basic characteristics by manipulating its genetic material. This is an advanced branch of science that applies a wide range of scientific techniques to bring out desired changes in the genetic structure or DNA code of living organisms. The programme aims to create professionals who are passionate about finding newer and better methodologies for the betterment of the human race at large. Research agriculture industrial biotechnology and medicine are some of the fields that use Genetic engineering techniques. The programme trains students to deploy modern DNA technology for direct structure manipulation of an organism’s genome. The curriculum endows academic excellence to students including quality teaching high-end research and the study of technology development in frontier areas of Genetic Engineering, Stem Cell, Biology, Oncology, Biomedical Engineering and Molecular Medicine.",
+      "thumbnail": "../../assets/genetic.jpg"
+    },
+    {
+      "id": 21,
+      "title": "B.Tech.(Environmental Engineering)",
+      "open": "Open",
+      "close": "Close",
+      "description": "Environmental engineering is a professional engineering discipline related to environmental science. It encompasses broad scientific topics like chemistry, biology, ecology, geology, hydraulics, hydrology, microbiology, and mathematics to create solutions that will protect and also improve the health of living organisms and improve the quality of the environment.[1][2] Environmental engineering is a sub-discipline of civil engineering and chemical engineering. While on the part of civil engineering, the Environmental Engineering is focused mainly on Sanitary Engineering.[3]",
+      "thumbnail": "../../assets/environment.jpg"
+    },
+    {
+      "id": 22,
+      "title": "B.Tech.(Food Technology)",
+      "open": "Open",
+      "close": "Close",
+      "description": "Food Technology or Food Engineering is a unique course that has marked its influence everywhere. In the modern world, it is one of the best courses in terms of scope, salary, comfort and happiness. Full-time courses in food technology are mainly chosen by those students who don’t have any issue regarding jobs or placements until 4 years. Full-time course in food technology is basically a 4-years course with 8 semesters. In full time courses, students are required to attend offline classes and stay on college campuses. They are taught with different modes such as theoretical classes, practical classes, experimentation and laboratory training. Full-time course includes a huge syllabus and semester examinations are conducted in sessional and final exam format.",
+      "thumbnail": "../../assets/food.jpg"
+    },
+    {
+      "id": 24,
+      "title": "B.Tech.(Geo Science Engineering)",
+      "open": "Open",
+      "close": "Close",
+      "description": "B.Tech in Geo Science Engineering is a four year undergraduate program that deals with the study of the interpretation, analysis, extraction of hydrocarbons, digging engineering techniques and rock and soil mechanics for the extraction of the petroleum below the ground. B.Tech in Geo Science Engineering basically deals with the technical information needed for the extraction of petroleum from the earth. Geotechnical Engineering Course focuses on the physical properties of the rocks and the soil and the thorough study of the mechanism of the extraction of the petroleum.",
+      "thumbnail": "../../assets/geo.jpg"
+    },
+    {
+      "id": 15,
+      "title": "Marine Engineering",
+      "open": "Open",
+      "close": "Close",
+      "description": "B. Tech in Marine Engineering is an undergraduate course that includes the study of the basic concepts of marine engineering such as technologies used in shipbuilding, harbors and oil platforms. It also includes the construction of such technologies. The machinery used in marine engineering are related to the ships, vessels used in marine and a variety of marine vehicles and transports. The curriculum of marine engineering includes theoretical teaching and practical training at the shipyards. Students who opt for B.Tech in Marine Engineering course are introduced to technologies like naval architecture, hydraulic turbine, pneumatic machinery, ship design and construction, control engineering.",
+      "thumbnail": "../../assets/marine.jpg"
+    },
+    {
+      "id": 14,
+      "title": "Electronics & Instrumentation Engineering",
+      "open": "Open",
+      "close": "Close",
+      "description": "Electronics and instrumentation engineering (EIE) is an advanced branch of science that deals with the principles and operations of measuring instruments used in the design and configuration of automated systems. Electronics and Instrumentation Engineering field deals with the creation, building and maintenance of measuring and control devices and systems found in manufacturing plants and research institutions. Instrumentation Engineering is the foundation of Mechatronics and Robotics Engineering. Its objective is to ensure that systems and processes work safely and efficiently. Instrumentation engineers design various instruments for different sectors. Therefore, they are needed in various domains and hired after their graduation. Electronics and Instrumentation Engineering branch of Engineering is quite tough because it requires the students’ notional thinking. ",
+      "thumbnail": "../../assets/istrumentation.jpg"
     }
   ],
   "attendence": [
     {
       "username": "Vigneshwaran ",
-      "data1": "2023-04-03T06:01:04.099Z",
-      "time1": "2023-04-03T06:01:04.099Z",
+      "data1": "2023-04-03",
+      "time1": "01:04.099",
       "select1": "Present",
       "id": 1
     },
     {
       "username": "Mani",
-      "data1": "2023-04-03T06:31:20.575Z",
-      "time1": "2023-04-03T06:31:20.575Z",
+      "data1": "2023-04-03",
+      "time1": "06:31:20",
       "select1": "Absent",
       "id": 2
+    },
+    {
+      "username": "gautam",
+      "data1": "2023-06-08",
+      "time1": "04:14:55",
+      "select1": "Present",
+      "id": 3
+    },
+    {
+      "username": "gautam",
+      "data1": "2023-06-08",
+      "time1": "04:14:55",
+      "select1": "Present",
+      "id": 4
+    },
+    {
+      "username": "Vigneshwaran ",
+      "data1": "2023-06-23",
+      "time1": "09:28:27",
+      "select1": "Present",
+      "id": 5
+    },
+    {
+      "username": "Vigneshwaran ",
+      "data1": "7/10/2023",
+      "time1": "4:47:23 PM",
+      "select1": "Absent",
+      "id": 6
     }
   ],
   "staffattendence": [
     {
       "username": "kannan",
-      "data1": "2023-04-05T05:35:29.705Z",
-      "time1": "2023-04-05T05:35:29.705Z",
+      "data1": "2023-04-05",
+      "time1": "05:35:29",
       "select1": "Absent",
       "id": 1
     },
     {
       "username": "Renuga",
-      "data1": "2023-04-05T05:52:53.009Z",
-      "time1": "2023-04-05T05:52:53.009Z",
+      "data1": "2023-04-05",
+      "time1": "05:52:53",
       "select1": "Present",
       "id": 2
+    },
+    {
+      "username": "kannan",
+      "data1": "2023-06-08",
+      "time1": "04:17:38",
+      "select1": "Absent",
+      "id": 3
+    },
+    {
+      "username": "Kannan",
+      "data1": "2023-06-12",
+      "time1": "15:24:53",
+      "select1": "Absent",
+      "id": 4
     }
   ],
   "Complients": [
     {
-      "Name": "Vignesh",
-      "email": "vignesh@gmail.com",
-      "Subject": "Supply Chain Management System",
-      "Message": "ywfeuhiwnrjgfreigietnbkngrkbjkrmbgrbiunkmknguihgvjnfkvriknrjbthirjbkrntbhritbrnbkrnbniorjbtoj",
-      "id": 1
+      "username": "vigneshwaran",
+      "Staffname": "Renuga",
+      "Subject": " Supply Chain Management",
+      "Message": "what is Supply Chain Management?",
+      "status": "",
+      "id": 1,
+      "reply": "Used for marketing"
     }
   ]
 }

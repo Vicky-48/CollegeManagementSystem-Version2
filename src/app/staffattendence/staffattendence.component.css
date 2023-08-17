@@ -1,6 +1,8 @@
 body{
   /* background:black; */
   height: 100vh;
+  background-color: #9BE8D8;
+
 }
 /*Attendance List serction  */
 .heading-bg {
@@ -48,10 +50,10 @@ table thead tr{
 .table tbody tr:nth-of-type(odd){
   background: #f3f3f3;
 }
-.table tbody tr.active:hover{
+/* .table tbody tr.active:hover{
   font-weight: bold;
   color:darkcyan;
-}
+} */
 .table tbody tr:last-of-type{
   border-bottom: 3px solid darkcyan;
 }

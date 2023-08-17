@@ -1,5 +1,56 @@
 <app-StudentpageManu></app-StudentpageManu>
-<div class="login">
+<body>
+  <div class="heading-bg">
+    <section class="heading-link">
+      <h3><i class="fa-solid fa-graduation-cap"></i>STUDENT COMPLAINTS</h3>
+    </section>
+  </div>
+  <form [formGroup]="complient"  (ngSubmit)=" validate()">
+    <div class="table1">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>NAME</th>
+            <th>STAFFNAME</th>
+            <th>SUBJECT</th>
+            <th>QUERYS</th>
+            <th>submit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{loggedInUser.firstname1}} </td>
+            <td>
+              <select class="select"  name="select" formControlName="Staffname" >
+                <option class="1">Kannan</option>
+                <option class="1">Renuga</option>
+                <!-- <option class="1">Late</option> -->
+            </select>
+            </td>
+
+            <td>
+              <div class="field subject">
+                <div class="input-area">
+                    <input type="text" placeholder="Your Subject"  class="form" formControlName="Subject"  >
+                    <i class=" icon fa-solid fa-envelope-open-text"></i>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class="field message">
+                <div class="input-area">
+                    <input type="text" placeholder="Your Querys"  class="form1"name="form1" formControlName="Message" >
+                    <i class=" icon fa-solid fa-envelope-open-text"></i>
+                </div>
+            </div>
+            </td>
+            <td><button type="submit"  >Submit</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </form>
+<!-- <div class="login">
   <header>STUDENT COMPLAINTS </header>
   <form action="#" [formGroup]="complient" (submit)="submitForm()">
       <div class="field name">
@@ -94,5 +145,6 @@
     </div>
     <button [disabled]="!complient.valid">Submit</button>
   </form>
-</div>
+</div> -->
+</body>
 <app-footer></app-footer>

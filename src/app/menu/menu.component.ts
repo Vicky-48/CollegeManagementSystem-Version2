@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { images } from 'src/environments/environment';
 
 @Component({
   selector: 'app-menu',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent implements OnInit {
-
+  HomeLogoimage:any=images.getLogo;
   constructor() { }
 
   ngOnInit() {

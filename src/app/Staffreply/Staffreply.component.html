@@ -1,0 +1,35 @@
+<app-StudentpageManu></app-StudentpageManu>
+<body>
+  <div class="heading-bg">
+    <section class="heading-link">
+      <h3><i class="fa-solid fa-graduation-cap"></i>Staff Reply</h3>
+    </section>
+    {{querys.replay}}
+  </div>
+  <div class="table1">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>S.NO</th>
+          <th>NAME</th>
+          <th>STAFFNAME</th>
+          <th>SUBJECT</th>
+          <th>QUERYS</th>
+          <th>QUERYS REPLY</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let query of getstatus;
+        ">
+         <td>{{query.id}}</td>
+         <td>{{query.username}}</td>
+         <td>{{query.Staffname}}</td>
+         <td>{{query.Subject}}</td>
+         <td>{{query.Message}}</td>
+         <td>{{query.reply}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+<app-footer></app-footer>

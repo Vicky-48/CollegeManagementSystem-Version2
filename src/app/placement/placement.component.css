@@ -84,10 +84,10 @@ p{
   margin-top: -100px;
   margin-right: 50px;
 }
- h1 {
+ h2 {
   margin: auto;
   width: fit-content;
-  margin-top: 30px;
+  margin-top: 60px;
   border-radius: 10px;
   padding:5px 30px;
   /* box-shadow:   0px 0px 0px 2px black; */
@@ -134,12 +134,11 @@ p{
 #heading{
   margin: auto;
   width: fit-content;
-  margin-top: 30px;
+  margin-top: 70px;
   border-radius: 10px;
   padding:5px 30px;
   /* box-shadow:   0px 0px 0px 2px black; */
   cursor: pointer;
-  font-family:'Crimson Text', serif;;
 }
 
 .placement{
@@ -175,7 +174,7 @@ p{
    border-radius: 5px;
    background-color: #21242b;
    border-bottom: 5px solid cyan;
-   margin-bottom: 20px;
+   margin-bottom: 70px;
 
 }
 .wrapper .container i{
@@ -199,3 +198,228 @@ span.text{
   line-height: 20px;
   margin-left: 20%;
 }
+.wrapper1{
+  /* border: 1px solid white; */
+  /* position: absolute; */
+  /* width: 80vw; */
+  /* transform: translate(90px,0px); */
+   display: flex;
+   justify-content: space-around;
+   gap:100px;
+   flex-wrap: wrap;
+   /* max-height: 170px; */
+   background-color: darkcyan;
+   width: 100%;
+   height: 100%;
+   padding-top: 20px;
+  }
+.container1{
+  width: 25vmin;
+  height: 25vmin;
+   border: 1px ;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   position: relative;
+   font-size: 16px;
+   border-radius: 5px;
+   background-color: #21242b;
+   border-bottom: 5px solid cyan;
+   margin-bottom: 20px;
+
+}
+.wrapper1 .container1 i{
+  color: cyan;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+#heading1{
+  margin: auto;
+  width: fit-content;
+  margin-top: 70px;
+  border-radius: 10px;
+  padding:5px 30px;
+  /* box-shadow:   0px 0px 0px 2px black; */
+  cursor: pointer;
+
+}
+
+.name{
+  margin-left: 15px;
+  font-size: large;
+  font-weight: 800;
+}
+.company{
+  margin-left: 50px;
+  font-size: large;
+  font-weight: 800;
+}
+.lpa{
+  margin-left: 45px;
+  font-size: large;
+  font-weight: 800;
+}
+.name1{
+  margin-left: 35px;
+  font-size: large;
+  font-weight: 800;
+}
+.company1{
+  margin-left:45px;
+  font-size: large;
+  font-weight: 800;
+}
+.lpa1{
+  margin-left: 60px;
+  font-size: large;
+  font-weight: 800;
+}
+.name2{
+  margin-left: 55px;
+  font-size: large;
+  font-weight: 800;
+}
+.company2{
+  margin-left: 2cqb;
+  font-size: large;
+  font-weight: 800;
+}
+.lpa2{
+  margin-left: 65px;
+  font-size: large;
+  font-weight: 800;
+}
+.name3{
+  margin-left: 15px;
+  font-size: large;
+  font-weight: 800;
+}
+.company3{
+  margin-left: 50px;
+  font-size: large;
+  font-weight: 800;
+}
+.lpa3{
+  margin-left: 55px;
+  font-size: large;
+  font-weight: 800;
+}
+.name4{
+  margin-left: 1px;
+  font-size: large;
+  font-weight: 800;
+}
+.company4{
+  margin-left: 55px;
+  font-size: large;
+  font-weight: 800;
+}
+.lpa4{
+  margin-left: 50px;
+  font-size: large;
+  font-weight: 800;
+}
+.name5{
+  margin-left: 45px;
+  font-size: large;
+  font-weight: 800;
+}
+.company5{
+  margin-left: 60px;
+  font-size: large;
+  font-weight: 800;
+}
+.lpa5{
+  margin-left: 60px;
+  font-size: large;
+  font-weight: 800;
+}
+.name6{
+  margin-left: 25px;
+  font-size: large;
+  font-weight: 800;
+}
+.company6{
+  margin-left: 70px;
+  font-size: large;
+  font-weight: 800;
+}
+.lpa6{
+  margin-left: 60px;
+  font-size: large;
+  font-weight: 800;
+}
+.name7{
+  margin-left: 45px;
+  font-size: large;
+  font-weight: 800;
+}
+.company7{
+  margin-left: 65px;
+  font-size: large;
+  font-weight: 800;
+}
+.lpa7{
+  margin-left: 65px;
+  font-size: large;
+  font-weight: 800;
+}
+.name8{
+  margin-left: 40px;
+  font-size: large;
+  font-weight: 800;
+}
+.company8{
+  margin-left: 70px;
+  font-size: large;
+  font-weight: 800;
+}
+.lpa8{
+  margin-left: 65px;
+  font-size: large;
+  font-weight: 800;
+}
+
+#heading1,#heading {
+  animation-name: colorChange;
+  animation-duration: 6s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+@keyframes colorChange {
+  /* 0% {
+    color: red;
+  }
+  10% {
+    color: orange;
+  }
+  20% {
+    color: brown;
+  }
+  30% {
+    color: violet;
+  }
+  40% {
+    color: yellow;
+  } */
+ 50% {
+    color: lightcyan;
+  }
+  /* 60% {
+    color: green;
+  }
+  700% {
+    color: lightblue;
+  } 80% {
+    color: lightcyan;
+  } 90% {
+    color: darkcyan;
+  } */
+  100% {
+    color: black;
+  }
+}
+
+

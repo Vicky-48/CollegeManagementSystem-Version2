@@ -11,8 +11,8 @@ import { LoginService } from '../login.service';
 })
 export class AttendenceComponent implements OnInit {
   loggedInUser:any;
-  date=new Date();
-  time=new Date();
+  date=new Date().toLocaleDateString();
+  time=new Date().toLocaleTimeString();
   constructor(private service:LoginService, private router:Router, private fb:FormBuilder,private user:AttendenceService ) {
 // this.loggedInUser.subscribe((data:any)=>{
 //   this.values="data"
@@ -23,13 +23,13 @@ export class AttendenceComponent implements OnInit {
 
   validate(){
     var body={
-      username:this.loggedInUser.firstname1,
+       username:this.loggedInUser.firstname1,
       data1:this.date,
       time1:this.time,
       select1:this.select,
     }
     this.user.addattendenceInformation(body).subscribe(data=>{
-      alert("Form submitted");
+      alert("Attendence submitted");
       // this.route.navigate(['/login']);
     })
 }
@@ -40,12 +40,7 @@ export class AttendenceComponent implements OnInit {
     // this.values=this.loggedInUser.firstname1;
     if (sessionUser) {
       this.loggedInUser = JSON.parse(sessionUser);
-    } else if (this.service.loggedInUser !== null) {
-      this.loggedInUser = this.service.loggedInUser;
-    } else {
-      alert('You are Loggedout. Login to countinue');
-      this.router.navigate(['/login']);
-    }
+    } 
   }
   }
 

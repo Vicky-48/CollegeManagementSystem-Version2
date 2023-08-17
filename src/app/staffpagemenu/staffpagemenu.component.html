@@ -1,22 +1,23 @@
 <body>
   <nav class="nav">
-    <div class="logo"><img src="../../assets/logo.png"><h4>VIP Engineering College</h4></div>
+    <div class="logo"><img src="../../assets/logo.png"><h4>VIP Engineering College</h4>
+    </div>
       <ul>
-          <li><a routerLink="/staffhome" routerLinkActive="activated"><i class="fa fa-home"> HOME</i></a></li>
-          <li><a routerLink="/staffattendence" routerLinkActive="activated"><i class="fa fa-calendar"> Attendence</i></a></li>
-          <li><a  routerLink="/studentattendenceview" routerLinkActive="activated"><i class="fa fa-marker">Student Attendence</i></a></li>
-          <li><a  routerLink="/studentcomplientsview" routerLinkActive="activated"><i class="fa fa-check">Student Complaints</i></a></li>
-          <li><a  routerLink="/uploadmark" routerLinkActive="activated"><i class="fa fa-thumbtack"> Upload Marks</i></a></li>
-          <li><a  routerLink="/staffprofile" routerLinkActive="activated"><i class="fa fa-thumbtack"> Profile</i></a></li>
+          <li><a routerLink="/staffhome" routerLinkActive="activated"><i class="fa fa-home"> </i> <span> Home</span></a></li>
+          <li><a routerLink="/staffattendence" routerLinkActive="activated"><i class="fa fa-calendar"></i><span> Attendence</span></a></li>
+          <li><a  routerLink="/studentattendenceview" routerLinkActive="activated"><i class="fa fa-marker"> </i> <span> Student Attendence View</span></a></li>
+          <li><a  routerLink="/studentcomplientsview" routerLinkActive="activated"><i class="fa fa-check"> </i> <span> Student Complaints</span></a></li>
+          <!-- <li><a  routerLink="/uploadmark" routerLinkActive="activated"><i class="fa fa-thumbtack"> Upload Marks</i></a></li> -->
+          <li><a  routerLink="/profile" routerLinkActive="activated"><i class="fa fa-user"></i><span> Profile</span></a>
+            <input type="checkbox" id="btn1">
+            <ul>
+              <li><a routerLink="/staffprofile" routerLinkActive="activated"><i class="fa fa-book" aria-hidden="true"></i><span> ViewProfile</span></a></li>
+              <li><a routerLink="/Editstaffprofile" routerLinkActive="activated"><i class="fa fa-graduation-cap" aria-hidden="true"  (click)="EditProfile()"> </i><span> EditProfile </span></a></li>
+              <!-- <li><a routerLink="/admission"  routerLinkActive="activated"><i class="fa fa-graduation-cap" aria-hidden="true"> </i><span> StaffReply </span></a></li> -->
+            </ul></li>
 
-          <li><a  routerLink="/home" routerLinkActive="activated"><i class="fa fa-angles-right">Logout</i></a></li>
+          <li><a  routerLink="/home" routerLinkActive="activated"><i class="fa fa-angles-right"></i> <span> Logout</span></a></li>
       </ul>
-
-      <div class="hamburger">
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"></span>
-      </div>
   </nav>
 
 

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UserService } from '../user.service';
 
 @Component({
   selector: 'app-viewstaffattendence',
@@ -6,8 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./viewstaffattendence.component.css']
 })
 export class ViewstaffattendenceComponent implements OnInit {
-
-  constructor() { }
+  staffattendence:any;
+  constructor(private service:UserService) {
+    this.service.getstaffattendence().subscribe((value) => {
+      this.staffattendence= value;
+    })
+   }
 
   ngOnInit() {
   }

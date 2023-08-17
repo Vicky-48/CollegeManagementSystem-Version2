@@ -5,7 +5,7 @@
     <!-- <div class="exit">
                           <a routerLink="/login">Exit <i class="fa-solid fa-share-from-square"></i></a>
                       </div> -->
-    <header>REGISTER</header>
+    <header>Add Staffs</header>
 
     <form [formGroup]="staffRegister" (submit)="submitForm()">
       <div class="field firstname">
@@ -25,18 +25,15 @@
       </div>
       <div
         class="information-error"
-        *ngIf="staffRegister.controls['firstname1'].dirty"
-      >
+        *ngIf="staffRegister.controls['firstname1'].dirty">
         <p
           class="error"
-          *ngIf="staffRegister.controls['firstname1'].errors?.['required']"
-        >
+          *ngIf="staffRegister.controls['firstname1'].errors?.['required']">
           <i class="fas fa-exclamation-circle"></i>&numsp; Enter the FirstName
         </p>
         <p
           class="error"
-          *ngIf="staffRegister.controls['firstname1'].errors?.['pattern']"
-        >
+          *ngIf="staffRegister.controls['firstname1'].errors?.['pattern']">
           <i class="fas fa-exclamation-circle"></i>&numsp; Enter Only Alphabet
           Letters
         </p>
@@ -57,18 +54,15 @@
       </div>
       <div
         class="information-error"
-        *ngIf="staffRegister.controls['lastname1'].dirty"
-      >
+        *ngIf="staffRegister.controls['lastname1'].dirty">
         <p
           class="error"
-          *ngIf="staffRegister.controls['lastname1'].errors?.['required']"
-        >
+          *ngIf="staffRegister.controls['lastname1'].errors?.['required']">
           <i class="fas fa-exclamation-circle"></i>&numsp; Enter the LastName
         </p>
         <p
           class="error"
-          *ngIf="staffRegister.controls['lastname1'].errors?.['pattern']"
-        >
+          *ngIf="staffRegister.controls['lastname1'].errors?.['pattern']">
           <i class="fas fa-exclamation-circle"></i>&numsp; Enter Only Alphabet
           Letters
         </p>
@@ -89,12 +83,10 @@
       </div>
       <div
         class="information-error"
-        *ngIf="staffRegister.controls['email1'].dirty"
-      >
+        *ngIf="staffRegister.controls['email1'].dirty">
         <p
           class="error"
-          *ngIf="staffRegister.controls['email1'].errors?.['required']"
-        >
+          *ngIf="staffRegister.controls['email1'].errors?.['required']">
           <i class="fas fa-exclamation-circle"></i>&numsp; Enter the Email-id
         </p>
         <p
@@ -125,14 +117,12 @@
       >
         <p
           class="error"
-          *ngIf="staffRegister.controls['password1'].errors?.['required']"
-        >
+          *ngIf="staffRegister.controls['password1'].errors?.['required']">
           <i class="fas fa-exclamation-circle"></i>&numsp;Enter the Password
         </p>
         <p
           class="error"
-          *ngIf="staffRegister.controls['password1'].errors?.['pattern']"
-        >
+          *ngIf="staffRegister.controls['password1'].errors?.['pattern']">
           <i
             title="password have min 7 digits, uppercase, lowercase, number and special character"
             class="fas fa-exclamation-circle"
@@ -182,4 +172,3 @@
   </div>
 </body>
 <app-footer></app-footer>
-

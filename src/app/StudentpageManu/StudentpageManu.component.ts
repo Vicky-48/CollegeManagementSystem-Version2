@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { LoginService } from '../login.service';
+import { UserService } from '../user.service';
 
 @Component({
   selector: 'app-StudentpageManu',
@@ -9,8 +10,10 @@ import { LoginService } from '../login.service';
 })
 export class StudentpageManuComponent implements OnInit {
   loggedInUser:any;
-  constructor(private service:LoginService, private router:Router) { }
-
+  constructor(private service:LoginService,private user:UserService, private router:Router) { }
+  EditProfile(){
+    this.user.getstudentdetails=this.loggedInUser
+    }
   ngOnInit() {
     const sessionUser = sessionStorage.getItem('loggedInUser'); // <-- retrieve user details from session storage
     if (sessionUser) {

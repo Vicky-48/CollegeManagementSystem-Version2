@@ -18,7 +18,6 @@ import { AttendenceComponent } from './attendence/attendence.component';
 import { DepartmentComponent } from './department/department.component';
 import { StudenthomeComponent } from './Studenthome/Studenthome.component';
 import { MARKComponent } from './MARK/MARK.component';
-import { ProfileComponent } from './profile/profile.component';
 import { ComplientsComponent } from './complients/complients.component';
 import { StaffpagemenuComponent } from './staffpagemenu/staffpagemenu.component';
 import { StaffhomeComponent } from './staffhome/staffhome.component';
@@ -28,15 +27,19 @@ import { StudentattendenceviewComponent } from './studentattendenceview/studenta
 import { StudentcomplientsviewComponent } from './studentcomplientsview/studentcomplientsview.component';
 import { AdminmenuComponent } from './adminmenu/adminmenu.component';
 import { AdminhomeComponent } from './adminhome/adminhome.component';
-import { AdminprofileComponent } from './adminprofile/adminprofile.component';
 import { ViewstaffattendenceComponent } from './viewstaffattendence/viewstaffattendence.component';
 import { AddstaffComponent } from './addstaff/addstaff.component';
 import { UploadmarkComponent } from './uploadmark/uploadmark.component';
-
-
+import { DepartmentchildComponent } from './departmentchild/departmentchild.component';
+import { ContactformviewComponent } from './contactformview/contactformview.component';
+import { StudentprofileComponent } from './Studentprofile/Studentprofile.component';
+import { EditprofileComponent } from './Editprofile/Editprofile.component';
+import { EditstaffprofileComponent } from './Editstaffprofile/Editstaffprofile.component';
+import { StaffreplyComponent } from './Staffreply/Staffreply.component';
+import { LoggerModule, NgxLoggerLevel } from "ngx-logger";
 
 @NgModule({
-  declarations: [		
+  declarations: [
     AppComponent,
     AdmissionComponent,
     ContactUsComponent,
@@ -51,7 +54,6 @@ import { UploadmarkComponent } from './uploadmark/uploadmark.component';
       DepartmentComponent,
       StudenthomeComponent,
       MARKComponent,
-      ProfileComponent,
       ComplientsComponent,
       StaffpagemenuComponent,
       StaffhomeComponent,
@@ -61,17 +63,29 @@ import { UploadmarkComponent } from './uploadmark/uploadmark.component';
       StudentcomplientsviewComponent,
       AdminmenuComponent,
       AdminhomeComponent,
-      AdminprofileComponent,
       ViewstaffattendenceComponent,
       AddstaffComponent,
-      UploadmarkComponent
+      UploadmarkComponent,
+      DepartmentComponent,
+      DepartmentchildComponent,
+      ContactformviewComponent,
+      StudentprofileComponent,
+      EditprofileComponent,
+      StaffprofileComponent,
+      EditstaffprofileComponent,
+      StaffreplyComponent
    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    LoggerModule.forRoot({
+      serverLoggingUrl: '',
+      level: NgxLoggerLevel.DEBUG,
+      serverLogLevel: NgxLoggerLevel.ERROR
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

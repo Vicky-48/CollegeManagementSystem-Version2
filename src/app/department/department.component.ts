@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DeparmentService } from '../deparment.service';
 
 @Component({
   selector: 'app-department',
@@ -6,10 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./department.component.css']
 })
 export class DepartmentComponent implements OnInit {
+  department:any;
 
-  constructor() { }
+  constructor(private service:DeparmentService) {
+    this.service.getdepartment().subscribe(data=>{
+      this.department=data;
+    })
+   }
+
 
   ngOnInit() {
+
   }
 
 }

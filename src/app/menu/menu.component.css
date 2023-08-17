@@ -42,10 +42,9 @@
 color: white;
 text-decoration: none;
 line-height: 70px;
-font-size: 18px;
+font-size: 20px;
 padding: 10px 8px;
 
-/* padding-left: 15px; */
 }
 
 .nav ul li a:hover:not(.activated) {
@@ -63,7 +62,10 @@ padding: 10px 8px;
   box-shadow: 0 0 5px #33ffff,
               0 0 5px #66ffff;
 }
-.activated i{
+.activated i {
+  color: cyan;
+}
+.activated span{
   color: cyan;
 }
 
@@ -139,3 +141,4 @@ padding: 10px 8px;
 .show,.icon,input{
   display: none;
 }
+

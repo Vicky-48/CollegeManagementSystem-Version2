@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { ContactService } from './contact.service';
+import { images } from 'src/environments/environment';
 
 @Component({
   selector: 'app-contactUs',
@@ -8,7 +9,8 @@ import { ContactService } from './contact.service';
   styleUrls: ['./contactUs.component.css']
 })
 export class ContactUsComponent implements OnInit {
-
+  Contactusimage:any=images.getContactusimage;
+  Contactus1image:any=images.getContactus1image;
   constructor(
     private fb:FormBuilder, private contact:ContactService
   ) { }

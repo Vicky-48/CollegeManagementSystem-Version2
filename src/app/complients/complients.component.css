@@ -1,7 +1,25 @@
-
-/* ------------------------------------------------------form------------------------------------------- */
+/*
 body{
-  background-color: #33ffff;
+  padding-bottom: 30px;
+  background-color: #9BE8D8;
+}
+.heading-bg {
+  background-color: darkcyan;
+  background-size: cover;
+  background-position: center;
+  border-bottom: 3px solid black;
+}
+.heading-link {
+  text-align: center;
+  overflow: hidden;
+}
+.heading-link h3 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: inherit;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
 }
 form #message{
   height: 100px;
@@ -9,18 +27,16 @@ form #message{
 .login {
   width: 500px;
   padding: 40px 30px 70px 30px;
-  background:azure;
+  background:darkcyan;
   border-radius: 15px;
   text-align: center;
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
   margin: auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
-
+  margin-top: 50px;
 }
 
 .login header {
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 600;
 }
 
@@ -45,21 +61,9 @@ position: relative;
 display:inline-flex;
 text-align: right;
 }
-/* form .field1 .input1-area .head{
-  margin-right: 100px;
-  padding-right: 340px;
-  color: black;
-} */
-/* form .field1 .input1-area .head {
-  margin-right: 100px;
-  padding-right: 340px;
-  color: black;
-} */
-/* form .field1 .input1-area .head1{
-  margin-right: 100px;
-   padding-right: 370px;
-   color: black;
-}  */
+
+
+
 form  .field1 .input1-area .types label{
   padding-right: 60px;
   transform: translate(10px, -5px);
@@ -71,7 +75,7 @@ form input {
   outline: none;
   padding: 0 45px;
   font-size: 18px;
-  /* caret-color: #5372F0; */
+
   border-radius: 5px;
   border: 1px solid #bfbfbf;
   border-bottom-width: 2px;
@@ -108,6 +112,7 @@ button {
   cursor: pointer;
   border-bottom: 2px solid rgba(0, 0, 0, 0.1);
   transform: translateY(70px);
+  border-radius: 5px;
 }
 
 button {
@@ -134,4 +139,99 @@ margin-left: 40px;
 #icon{
   margin-left: 30px;
   margin-top: 25px;
+} */
+body{
+  /* background:black; */
+  height: 100vh;
+  background-color: #9BE8D8;
+
 }
+/*Attendance List serction  */
+.heading-bg {
+  background-color: darkcyan;
+  background-size: cover;
+  background-position: center;
+  border-bottom: 3px solid black;
+}
+.heading-link {
+  text-align: center;
+  overflow: hidden;
+}
+.heading-link h3 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: inherit;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+.table{
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 15px;
+  min-width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 5px 5px 0 0;
+}
+table thead tr{
+  color: #fff;
+  background:darkcyan;
+  text-align: center;
+  font-weight: bold;
+
+}
+.table th,
+.table td{
+  padding: 15px 20px;
+  text-align: center;
+}
+.table tbody tr{
+  border-bottom: 1px solid #ddd;
+}
+.table tbody tr:nth-of-type(odd){
+  background: #f3f3f3;
+}
+/* .table tbody tr.active:hover{
+  font-weight: bold;
+  color:darkcyan;
+} */
+.table tbody tr:last-of-type{
+  border-bottom: 3px solid darkcyan;
+}
+.table button{
+  padding: 6px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid darkcyan;
+}
+.table button:hover{
+  background: darkcyan;
+  color: #fff;
+  transition: 0.5rem;
+}
+.table1{
+  margin-top: 100px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.input-area input{
+  height: 60px;
+  width: 300px;
+  padding: 0 45px;
+  border-radius: 3px;
+}
+.input-area i{
+ transform: translate(-370px,0px);
+}
+.input-area .icon {
+  left: 15px;
+  color: #bfbfbf;
+  transition: color 0.2s ease;
+}
+form input:focus~.icon,
+form .field.valid .icon {
+  color: #5372F0;
+}
+

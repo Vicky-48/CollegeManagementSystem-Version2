@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -10,7 +11,7 @@ export class ContactService {
 
   addContactInformation(body:any){
 
-    return this.client.post("http://localhost:3000/contactForm",body);
+    return this.client.post(environment.getContactForm,body);
 
   }
 

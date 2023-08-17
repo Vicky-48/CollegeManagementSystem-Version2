@@ -1,0 +1,143 @@
+<app-staffpagemenu></app-staffpagemenu>
+<body>
+  <div class="image"></div>
+  <div class="login">
+    <header>EDIT PROFILE</header>
+
+    <form [formGroup]="formRegister">
+      <div class="field firstname">
+        <div class="input-area">
+          <input
+            type="text"
+            autocomplete="off"
+            pattern="^[A-Z a-z]{3,15}$"
+            name="uname"
+            placeholder="FirstName"
+            class="input"
+            formControlName="firstname1"
+          />
+          <i class="icon fas fa-user"></i>
+        </div>
+      </div>
+      <div
+        class="information-error"
+        *ngIf="formRegister.controls['firstname1'].dirty"
+      >
+        <p
+          class="error"
+          *ngIf="formRegister.controls['firstname1'].errors?.['required']"
+        >
+          <i class="fas fa-exclamation-circle"></i>&numsp; Enter the FirstName
+        </p>
+        <p
+          class="error"
+          *ngIf="formRegister.controls['firstname1'].errors?.['pattern']"
+        >
+          <i class="fas fa-exclamation-circle"></i>&numsp; Enter the Valid Name
+        </p>
+      </div>
+      <div class="field lastname">
+        <div class="input-area">
+          <input
+            type="text"
+            autocomplete="off"
+            pattern="^[A-Z a-z]{1,8}$"
+            name="lname"
+            placeholder="LastName"
+            class="input"
+            formControlName="lastname1"
+          />
+          <i class="icon fas fa-user"></i>
+        </div>
+      </div>
+      <div
+        class="information-error"
+        *ngIf="formRegister.controls['lastname1'].dirty"
+      >
+        <p
+          class="error"
+          *ngIf="formRegister.controls['lastname1'].errors?.['required']"
+        >
+          <i class="fas fa-exclamation-circle"></i>&numsp; Enter the LastName
+        </p>
+        <p
+          class="error"
+          *ngIf="formRegister.controls['lastname1'].errors?.['pattern']"
+        >
+          <i class="fas fa-exclamation-circle"></i>&numsp; Enter Only Alphabet
+          Letters
+        </p>
+      </div>
+      <div class="field email">
+        <div class="input-area">
+          <input
+            type="email"
+            autocomplete="off"
+            pattern="^[a-z 0-9]+[@][a-z]+[\.]+[a-z]{2,3}$"
+            name="email"
+            placeholder="Email-id"
+            class="input"
+            formControlName="email1"
+          />
+          <i id="icon" class="icon fas fa-envelope"></i>
+        </div>
+      </div>
+      <div
+        class="information-error"
+        *ngIf="formRegister.controls['email1'].dirty"
+      >
+        <p
+          class="error"
+          *ngIf="formRegister.controls['email1'].errors?.['required']"
+        >
+          <i class="fas fa-exclamation-circle"></i>&numsp; Enter the Email-id
+        </p>
+        <p
+          class="error"
+          *ngIf="formRegister.controls['email1'].errors?.['pattern']"
+        >
+          <i class="fas fa-exclamation-circle"></i>&numsp; Enter the correct
+          email-id Formet
+        </p>
+      </div>
+      <div class="field password">
+        <div class="input-area">
+          <input
+          [type]="changetype? 'password' : 'text'"
+            pattern="^[A-Z]{1}[a-z]+[@/$/&/*#][1-9]{1,7}$"
+            name="Password"
+            placeholder="Password "
+            class="input"
+            required
+            formControlName="password1"
+          >
+          <div class="showandhide" (click)="showPassword()">
+            <i [ngClass]="visible? 'fa fa-eye':'fa fa-eye-slash'"></i>
+          </div>
+          <i id="icon1" class="icon fas fa-lock"></i>
+
+        </div>
+      </div>
+      <div
+        class="information-error1"
+        *ngIf="formRegister.controls['password1'].dirty"
+      >
+        <p
+          class="error"
+          *ngIf="formRegister.controls['password1'].errors?.['required']"
+        >
+          <i class="fas fa-exclamation-circle"></i>&numsp;Password is required
+        </p>
+        <p
+          class="error"*ngIf="formRegister.controls['password1'].errors?.['pattern']">
+          <i
+            title="password have min 7 digits, uppercase, lowercase, number and special character"
+            class="fas fa-exclamation-circle"
+          ></i>&numsp;password Constraints 1Cap(A)-Num(1)-Symbol(@)</p>
+      </div>
+      <button (click)="EditProfile()">Edit Profile</button>
+
+    </form>
+  </div>
+</body>
+<app-footer></app-footer>
